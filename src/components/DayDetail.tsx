@@ -22,6 +22,7 @@ export function DayDetail({ entry, onClose, onUpdate }: Props) {
             <span className="font-mono text-4xl font-bold text-border">{String(entry.day).padStart(2, '0')}</span>
             <h2 className="text-lg font-bold mt-1">{entry.subtitle}</h2>
             <p className="text-sm text-muted mt-1">{entry.hook}</p>
+            {entry.storyBeat && <p className="text-xs text-muted italic mt-2 border-l-2 border-border pl-2">{entry.storyBeat}</p>}
           </div>
           <button onClick={onClose} className="text-2xl text-muted hover:text-black">&times;</button>
         </div>

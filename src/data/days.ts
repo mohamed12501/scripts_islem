@@ -16,8 +16,10 @@ export interface DayEntry {
   type: ContentType;
   hook: string;
   subtitle: string;
+  storyBeat: string;
   scenes: Scene[];
   caption: string;
+  counterBar: string;
   goalDzd: number;
   status: Status;
   assignee?: Assignee;
@@ -32,46 +34,48 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 1,
     "week": 1,
     "type": "raw",
-    "hook": "\"Can you build a real business from Algeria in 30 days? I'm about to find out.\"",
-    "subtitle": "Day 1 / 30 — The challenge begins",
+    "hook": "\"We just walked in. Nobody's said the quiet part out loud yet.\"",
+    "subtitle": "Day 1 / 30",
+    "storyBeat": "Story beat: The first frame of a documentary is a promise. Don't explain the challenge — drop the viewer into the middle of arrival. The tension is already there before anyone speaks.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 4,
-        "direction": "Straight to camera. Dead serious. No smile. Let the silence sit for one beat before speaking.",
-        "text": "\"Can you build a real business from Algeria — from the internet — in 30 days? I'm about to find out.\""
+        "title": "Arrival — Face cam, car",
+        "timingSec": 5,
+        "direction": "Film from inside the car, pulling up. Don't speak yet. 3 seconds of silence. Let the anticipation sit.",
+        "text": "\"Day 1. We just arrived. 30 days starts right now.\""
       },
       {
         "id": "S2",
-        "title": "The Setup — Voiceover on B-roll",
-        "timingSec": 8,
-        "direction": "Film the house: entrance, workspace, all 4 people. Wide shot then tight close-ups of hands on keyboards, phones, notebooks.",
-        "text": "\"This house is our lab. 4 people. 4 different skills. 30 days. One goal: 10 million dinars from the internet. Nothing staged. Everything documented.\""
+        "title": "Walking In — Wide shot",
+        "timingSec": 13,
+        "direction": "Film the four of you entering. Wide angle — catch everyone's face. No music yet. Real ambient sound. Then close-up on hands setting down bags, eyes scanning the space.",
+        "text": "\"4 people. 4 skills. The plan is simple: 30 days, this house, one goal. 10 million dinars from the internet. We don't leave. We don't wait for clients to come to us. We go to them — every single day.\""
       },
       {
         "id": "S3",
-        "title": "Team Intro — Fast cuts",
-        "timingSec": 6,
-        "direction": "Each person — 1.5 seconds max. Name + role. Ultra fast montage. No music pause between them.",
-        "text": "You: \"Strategy and closing.\"\nAyoub: \"Video.\"\nMohamed: \"Systems.\"\nImad: \"Social media.\""
+        "title": "Fast Intros — Face cuts",
+        "timingSec": 10,
+        "direction": "Each person 2 seconds. Name and one word. Fast. No framing, no production. Point camera, they speak, cut.",
+        "text": "You: \"I find clients. I close.\"\nAyoub: \"I make the content.\"\nMohamed: \"I build the systems.\"\nImad: \"I run the accounts.\""
       },
       {
         "id": "S4",
-        "title": "The Rules — Face cam",
-        "timingSec": 7,
-        "direction": "",
-        "text": "\"Rules: we don't leave this house. We don't wait for clients to come to us. We work online only. Day 30 — we show everything. Whether we made it or not.\""
+        "title": "The Moment of Truth — Face cam",
+        "timingSec": 10,
+        "direction": "Close-up. Dead still. This is the honest moment before the bravado.",
+        "text": "\"Here's the truth: I've tried to build something 6 times before this. 6 times. And each one ended. I've never said that publicly before. This time — I'm filming all of it. The good days and the days I want to turn off the camera. Both.\""
       },
       {
         "id": "S5",
-        "title": "CTA — Face cam",
-        "timingSec": 3,
+        "title": "The Close — CTA",
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow to see if we make it. Day 2 tomorrow.\""
+        "text": "\"Follow. Day 2 starts at 6am.\""
       }
     ],
-    "caption": "Day 1 / 30. 0 DZD.\n4 people. 1 house. 30 days. 1 goal: 10M DZD from the internet.\nWe don't leave. We don't wait. We build live.\nFollow if you want to see if it's possible from Algeria.",
+    "caption": "Day 1 / 30. We're in.\r\n4 people. 1 house. 30 days. 10M DZD target.\r\nI've failed at this 6 times before. This time I'm filming everything.\r\nThe good days and the ones I want to turn the camera off.\r\nFollow — day 2 starts at 6am.",
+    "counterBar": "DAY 01 / 30 · 0 DZD · GOAL: 10,000,000 DZD",
     "goalDzd": 40000000,
     "status": "posted"
   },
@@ -79,79 +83,83 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 2,
     "week": 1,
     "type": "proof",
-    "hook": "\"Here's the exact business plan to reach 10 million dinars — laid out on a whiteboard.\"",
-    "subtitle": "Day 2 / 30 — The model revealed",
+    "hook": "\"The whiteboard. The math. The moment we all went quiet.\"",
+    "subtitle": "Day 2 / 30",
+    "storyBeat": "Story beat: Day 1 was emotion. Day 2 is reality. The moment the number goes on the whiteboard and you look each other in the eyes — the real weight of what you've started becomes visible. Let the silence do the work.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 3,
-        "direction": "",
-        "text": "\"Day 2. Yesterday we announced it. Today — the actual plan. Numbers on the table.\""
+        "title": "Morning — Voiceover B-roll",
+        "timingSec": 8,
+        "direction": "First morning. Film the house waking up. Coffee. Laptops opening. The whiteboard still blank on the wall.",
+        "text": "\"Day 2. 6:15am. Nobody slept as well as they pretended to. The whiteboard is still blank. Today we fill it.\""
       },
       {
         "id": "S2",
-        "title": "Whiteboard — Voiceover B-roll",
-        "timingSec": 10,
-        "direction": "Film the whiteboard with the plan written out. Marker on paper. Each person points to their role.",
-        "text": "\"One service: complete social media management for Algerian businesses. 25,000 DZD per month. To hit 10 million — we need 20 clients. First target: 5 clients in 30 days. That's 125,000 DZD monthly recurring. That's where we start.\""
+        "title": "The Number — Whiteboard B-roll",
+        "timingSec": 14,
+        "direction": "Film the marker writing 10,000,000 DZD. Slow. Then pan to each person's face watching it go up. Get the real reactions — don't direct them.",
+        "text": "\"Here's the math: one service — social media management for Algerian businesses. 25,000 DZD per month per client. To reach 10 million, we need 400 client-months. In 30 days, we need enough monthly recurring revenue to project that. First milestone: 5 clients at 25K each. That's 125,000 DZD per month — the proof the model works. That's what we're chasing first.\""
       },
       {
         "id": "S3",
-        "title": "Team Roles — Face cam",
-        "timingSec": 8,
-        "direction": "",
-        "text": "Ayoub: \"I create the content.\"\nMohamed: \"I build the systems.\"\nImad: \"I manage the accounts.\"\nYou: \"I find the clients and close.\""
+        "title": "The Quiet — Face cam",
+        "timingSec": 12,
+        "direction": "After the whiteboard moment. You're looking at the camera but you're still in the feeling.",
+        "text": "\"We all went quiet for about 10 seconds after I wrote it. Not because we doubted the number. Because once it's on the board — it's real. You can't unfeel that. That quiet is what this whole challenge is about.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Tomorrow we start hunting. Follow to see what happens.\""
+        "text": "\"Tomorrow: first outreach. Follow.\""
       }
     ],
-    "caption": "Day 2 / 30. Still 0 DZD.\nThe plan is on the board. 4 roles. 1 service. 1 target.\nTomorrow: outreach begins.\nFollow to see if the plan holds.",
+    "caption": "Day 2 / 30. The number is on the board.\r\n10,000,000 DZD. We all went quiet after I wrote it.\r\nThat quiet is what this is about.\r\nTomorrow: first outreach. Follow.",
+    "counterBar": "DAY 02 / 30 · 0 DZD · GOAL: 10,000,000 DZD",
     "goalDzd": 40000000,
     "status": "posted"
   },
   {
     "day": 3,
     "week": 1,
-    "type": "lesson",
-    "hook": "\"We sent 40 DMs on day 1. Here's what the reply rate actually taught me about cold outreach.\"",
-    "subtitle": "Day 3 / 30 — First outreach lesson",
+    "type": "raw",
+    "hook": "\"40 DMs sent. 1 reply. And the reply said 'not interested.'\"",
+    "subtitle": "Day 3 / 30",
+    "storyBeat": "Story beat: The first real collision with the market. Theory dies on contact. The viewer watches the confidence from day 2 meet reality on day 3. Don't fix it yet — just feel it.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 4,
-        "direction": "",
-        "text": "\"Day 3. 40 DMs sent. 4 replies. 1 warm prospect. That 10% reply rate taught me something I didn't expect.\""
+        "title": "End of Day — Face cam",
+        "timingSec": 6,
+        "direction": "Film this at the end of the day — not the morning. You should look like someone who worked all day and got almost nothing back.",
+        "text": "\"We sent 40 messages today. 10 per person. Businesses across Algiers — schools, gyms, clinics, restaurants. One reply. It said: 'We manage our own social media, thank you.'\""
       },
       {
         "id": "S2",
-        "title": "What Happened — B-roll",
-        "timingSec": 7,
-        "direction": "Film all 4 on phones/laptops. Energy of a real operation — not staged.",
-        "text": "\"Each person had 10 businesses to DM. Free audit offer. Show them what they're losing. Ask if they want a fix. We thought it would work better than it did.\""
+        "title": "The House — B-roll, quiet",
+        "timingSec": 12,
+        "direction": "Show everyone sitting. Tired. Not dramatic — just the real quiet of a hard first day of work.",
+        "text": "\"Nobody said much tonight. We had a plan. We executed the plan. The market didn't care about the plan. That's day 3. We go again tomorrow.\""
       },
       {
         "id": "S3",
-        "title": "The Lesson — Face cam",
-        "timingSec": 16,
+        "title": "Honest close — Face cam",
+        "timingSec": 12,
         "direction": "",
-        "text": "\"Here's what 10% reply rate actually means: the other 90% aren't bad prospects. The message was bad. When you cold DM someone, they don't know you. They don't care about your offer. They care about one thing: their problem. So if your message starts with YOU — your agency, your service, your offer — you've already lost. The message that worked was the one that started with THEM. Their page. Their specific problem. A question about their situation. Start with them. Always.\""
+        "text": "\"I'm not going to pretend this felt good. 40 DMs for 1 rejection is not what I pictured yesterday when I was drawing on the whiteboard. But I also know: day 3 data doesn't predict day 30 results. I know that. Tonight I'm just sitting with the discomfort.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Comment 'DM' — I'll send you the message format that got the replies.\""
+        "text": "\"Follow. Day 4 — we figure out why.\""
       }
     ],
-    "caption": "Day 3. 40 DMs. 4 replies. 1 warm prospect.\nNot bad results. Bad message.\nThe one that worked started with their problem, not my offer.\nComment \"DM\" — I'll send you the format.",
+    "caption": "Day 3 / 30. 40 DMs. 1 reply.\r\nIt said \"not interested.\"\r\nI'm sitting with the discomfort tonight.\r\nDay 4 we figure out why. Follow.",
+    "counterBar": "DAY 03 / 30 · 0 DZD · 40 DMs · 1 reply (rejection)",
     "goalDzd": 40000000,
     "status": "posted"
   },
@@ -159,39 +167,41 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 4,
     "week": 1,
     "type": "lesson",
-    "hook": "\"I tested 2 DM messages yesterday. One got replies. One didn't. Here's the word-for-word difference.\"",
-    "subtitle": "Day 4 / 30 — The outreach A/B test",
+    "hook": "\"I read yesterday's messages out loud to the team. The problem became obvious immediately.\"",
+    "subtitle": "Day 4 / 30",
+    "storyBeat": "Story beat: The morning-after debrief. Four people reading their own writing and cringing. The discovery that every message was about us, not them — arrives from the embarrassment of reading it aloud, not from a lesson.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 3,
-        "direction": "",
-        "text": "\"I ran a real A/B test on my DMs yesterday. Same product. Same target. Two different messages. The results were not close.\""
+        "title": "Morning debrief — Group face cam",
+        "timingSec": 10,
+        "direction": "Film all 4 sitting together. You read one of yesterday's DMs out loud. Real reaction from the team — don't guide it.",
+        "text": "\"This morning I read our messages out loud. Every single one started with: 'Hi, we're a social media agency...' or 'We offer...' or 'Our services include...' Listen to those three sentences. What's missing from all of them?\""
       },
       {
         "id": "S2",
-        "title": "Message A — Screen",
-        "timingSec": 8,
-        "direction": "Show the phone with the first message visible on screen. Read it aloud as you show it.",
-        "text": "\"Message A — long, formal, all about us. 'Hi, we're an agency specializing in social media management. We help businesses grow online. Let us know if you're interested.' Result: zero replies.\""
+        "title": "The realization — Face cam",
+        "timingSec": 14,
+        "direction": "",
+        "text": "\"Them. The business we're messaging. Their problem. Their page. Their situation. Not once did we mention them specifically. We were pitching into the void. Someone reads that and thinks: this is a copy-paste from a stranger who knows nothing about me. Because that's exactly what it was. So today — before any DMs go out — every message gets rewritten. It starts with something specific about their page. One observation. One question. Nothing else.\"\n\n[Insight: Nobody responds to messages about you. They respond to messages about them. The switch from \"we offer\" to \"I noticed your page does X — is that a problem you're trying to solve?\" is the difference between being ignored and being answered. We found this by reading our own bad writing out loud until it hurt.]"
       },
       {
         "id": "S3",
-        "title": "Message B + The Lesson — Face cam",
-        "timingSec": 18,
-        "direction": "",
-        "text": "\"Message B — short, specific, opens with a question about them. 'I looked at your account — you have a great product but your Instagram isn't reaching new people. Got 3 minutes? I'll show you exactly what I'd change.' Result: 4 replies from 20 sends. That's 20%. Six times better. The difference isn't skill. It's where you put the attention. Message A is about me. Message B is about them. Nobody cares about you when you cold DM them. They care about their problem.\""
+        "title": "Team writing — B-roll",
+        "timingSec": 10,
+        "direction": "Film everyone at their phones/laptops rewriting. Real working energy.",
+        "text": "\"New rule: before you hit send, read it out loud. If it sounds like it was written for anyone — rewrite it until it sounds like it was written only for them.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Comment 'DM' and I'll send you both messages so you can see the full comparison.\""
+        "text": "\"Comment 'DM' — I'll send you the new message format.\""
       }
     ],
-    "caption": "2 DM messages. Same product. Same target.\nMessage A: 0 replies. Message B: 4 from 20.\nThe difference: stop talking about yourself.\nComment \"DM\" — I'll send both messages.",
+    "caption": "Day 4. I read yesterday's DMs out loud to the team.\r\nEvery single one started with \"we.\" Not once did we mention them.\r\nNew rule: if the message could be sent to anyone — rewrite it.\r\nComment \"DM\" — sending the new format.",
+    "counterBar": "DAY 04 / 30 · 0 DZD · Messages rewritten",
     "goalDzd": 40000000,
     "status": "posted"
   },
@@ -199,39 +209,41 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 5,
     "week": 1,
     "type": "raw",
-    "hook": "\"Day 5 — someone in the house almost quit today. I'm telling you exactly what happened.\"",
-    "subtitle": "Day 5 / 30 — The first crisis",
+    "hook": "\"Someone in this house wants to go home. I'm not going to pretend that's not happening.\"",
+    "subtitle": "Day 5 / 30",
+    "storyBeat": "Story beat: Day 5 is the first real crisis. The viewer has been watching long enough to care about these people. A team member wanting out — on day 5 — raises the stakes for the entire series. Don't resolve it too quickly.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 4,
-        "direction": "",
-        "text": "\"Day 5. Someone in this house is done. Or almost done. And honestly — I understand why.\""
+        "title": "Hook — Face cam, tense",
+        "timingSec": 6,
+        "direction": "Film this in private — not in front of the team. Like a confessional. Lower energy than every other day so far.",
+        "text": "\"Day 5. One of us woke up this morning and said — quietly, to me specifically — 'I don't know if I can do this for 25 more days.' I'm not going to tell you who. But I'm going to tell you everything else.\""
       },
       {
         "id": "S2",
-        "title": "The Atmosphere — Voiceover B-roll",
-        "timingSec": 8,
-        "direction": "Film the house quietly — tension visible. Someone sitting apart, not working. Keep it real, not dramatic.",
-        "text": "\"5 days in. 0 dinars. 0 signed clients. Hundreds of DMs ignored. You work this hard and nothing moves — the doubt hits hard. It hit us today.\""
+        "title": "The atmosphere — Slow B-roll",
+        "timingSec": 12,
+        "direction": "Film the house without people in it — or with people very separate from each other. The isolation of doubt. No music.",
+        "text": "\"5 days. 0 dinars. 0 confirmed clients. The new messages are better but the market still hasn't said yes. And when the results don't match the energy you put in — something in you starts asking: is this real, or are we doing theater?\""
       },
       {
         "id": "S3",
-        "title": "The Conversation — Face cam",
-        "timingSec": 16,
+        "title": "The conversation — Face cam",
+        "timingSec": 18,
         "direction": "",
-        "text": "\"We talked. For a long time. And I said this: the first week of building anything always lies to you. It looks like nothing is working because results take longer than effort. We planted seeds in days 1, 2, 3, 4. We haven't harvested yet. The problem isn't the work. The problem is comparing day 5 results to day 30 expectations. We're still here. All four of us.\""
+        "text": "\"I didn't argue. I didn't motivate. I just asked: 'What specifically made you feel that today?' And what came out wasn't doubt about the business. It was doubt about their role. They felt like they were executing someone else's vision without being able to see how their part mattered. So I stopped everything. We sat for an hour. Everyone said what they felt was being wasted. We rebuilt the roles. Not the strategy — the roles. And tonight, the person who wanted to leave is still here. Still working. That's the only win today and it's enough.\""
       },
       {
         "id": "S4",
-        "title": "Team Shot — Group face cam",
-        "timingSec": 3,
+        "title": "CTA",
+        "timingSec": 4,
         "direction": "",
-        "text": "\"We go again tomorrow.\""
+        "text": "\"Follow. Day 6 — everyone's still in the house.\""
       }
     ],
-    "caption": "Day 5. Someone almost quit.\nWe talked it out. We're still here.\nWeek 1 is a lie — nothing looks like it's working yet.\nFollow to see what day 6 brings.",
+    "caption": "Day 5. Someone wanted to go home.\r\nWe stopped everything. Sat for an hour. Rebuilt the roles.\r\nThey're still here.\r\nThat's the only win today. It's enough. Follow.",
+    "counterBar": "DAY 05 / 30 · 0 DZD · Team: still intact",
     "goalDzd": 40000000,
     "status": "posted"
   },
@@ -239,39 +251,41 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 6,
     "week": 1,
     "type": "lesson",
-    "hook": "\"I analyzed 10 Algerian business Instagram accounts this morning. The same 3 mistakes in all of them.\"",
-    "subtitle": "Day 6 / 30 — Market research lesson",
+    "hook": "\"I spent this morning going through 10 Instagram pages of businesses we want to target. I started feeling embarrassed for them.\"",
+    "subtitle": "Day 6 / 30",
+    "storyBeat": "Story beat: After the team crisis on day 5, a necessary return to work. The audit session becomes the first moment of real confidence — they see the gap between what they can do and what their market has. Confidence from evidence, not bravado.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 3,
+        "title": "Hook — Face cam, leaning forward",
+        "timingSec": 6,
         "direction": "",
-        "text": "\"I spent this morning auditing 10 Algerian business accounts on Instagram. Same 3 mistakes in all of them.\""
+        "text": "\"Day 6. After yesterday I needed something concrete to hold onto. So I opened Instagram and went through 10 businesses we've been targeting. I wasn't looking for weaknesses. But I found the same three things wrong in all 10 of them.\""
       },
       {
         "id": "S2",
-        "title": "Context — Screen scroll B-roll",
-        "timingSec": 7,
-        "direction": "",
-        "text": "\"Schools, gyms, clinics, restaurants — all posting, nobody growing. Not because the product is bad. Because the content strategy is broken.\""
+        "title": "The audit — Screen scroll B-roll",
+        "timingSec": 12,
+        "direction": "Show the actual scrolling. Let the viewer see the pages. They don't need to read everything — the visual pattern of bad content is enough.",
+        "text": "\"A private school posting event photos with no hook. A gym reposting motivation quotes from 2019. A restaurant whose last post was 3 weeks ago. Across all 10: bios that don't say what the business actually does, no replies to comments — not one — and content that starts with the business name instead of something that stops the scroll. This is what we're competing against. And honestly — if this is the gap we fill? We deserve to win.\"\n\n[Insight: The competition isn't other agencies. It's inertia. Most Algerian businesses online aren't losing to better competitors — they're losing to their own unchanged habits. The three failure patterns we found in all 10 pages: no scroll-stopping hook, dead bio, zero comment response. Fix those three things on day one and you've already outperformed 80% of local content.]"
       },
       {
         "id": "S3",
-        "title": "The 3 Mistakes — Face cam",
-        "timingSec": 18,
-        "direction": "",
-        "text": "\"Mistake 1: posting event photos with no hook. The algorithm doesn't push content that starts with 'we organized an event.' Nobody cares. You have 2 seconds to stop the scroll. Mistake 2: the bio doesn't say what the business does. Someone lands on the page and has no idea. That's a conversion killer. Mistake 3: no reply to comments. The algorithm reads comment response time as a signal of community health. Ignore your comments, Instagram buries you. Fix these three things and you're already ahead of 80% of Algerian businesses online.\""
+        "title": "Team energy — Brief B-roll",
+        "timingSec": 10,
+        "direction": "Film the team after you share this. The shift in energy after yesterday's low.",
+        "text": "\"I showed this to the team this morning. It's the first time in 6 days I saw Imad actually lean forward. He said: 'I could fix all of those in one week.' I believe him.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"DM me 'audit' — I'll check your account for free.\""
+        "text": "\"DM me 'audit' — I'll check your page for free.\""
       }
     ],
-    "caption": "10 Algerian business accounts audited. Same 3 mistakes.\nNo hook. Broken bio. No comment replies.\nFix these 3 and you're ahead of 80% of local competition.\nDM me \"audit\" — I'll tell you exactly what you're losing.",
+    "caption": "Day 6. Audited 10 Algerian business pages.\r\nSame 3 problems in all of them. No hook. Dead bio. No replies.\r\nThe gap we fill is massive.\r\nDM me \"audit\" — free page review.",
+    "counterBar": "DAY 06 / 30 · 0 DZD · 10 pages audited · 3 patterns found",
     "goalDzd": 40000000,
     "status": "posted"
   },
@@ -279,39 +293,41 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 7,
     "week": 1,
     "type": "proof",
-    "hook": "\"Week 1 is done. Here are the exact numbers — no filter, no spin.\"",
-    "subtitle": "Day 7 / 30 — First weekly recap",
+    "hook": "\"Week 1 done. Here is every number. No filter, no context — just what actually happened.\"",
+    "subtitle": "Day 7 / 30",
+    "storyBeat": "Story beat: The first weekly reckoning. The viewer has watched 6 days of work and zero revenue. This is the episode where you hand them the full scorecard and don't apologize for it. Transparency earns more trust than good numbers.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 3,
-        "direction": "",
-        "text": "\"Week 1 done. Real numbers. No filter.\""
+        "title": "Hook — Whiteboard face cam",
+        "timingSec": 5,
+        "direction": "Stand in front of the whiteboard. Point at it.",
+        "text": "\"7 days. Week 1 done. Let me show you where we actually are.\""
       },
       {
         "id": "S2",
-        "title": "The Numbers — Voiceover on data",
-        "timingSec": 10,
+        "title": "The scoreboard — Face cam, slow",
+        "timingSec": 17,
         "direction": "",
-        "text": "\"7 days. 200+ DMs sent. 18 replies. 3 interested. 1 discovery call booked. 0 DZD made. That's week 1.\""
+        "text": "\"Total DMs sent: 200+. Replies: 18. That's 9%. Of those 18: 3 interested enough to keep talking. 1 discovery call booked for next week. Revenue received: zero. What we actually built this week: a message that works better than what we started with, a system that tracks everything, and one real prospect on the hook. That's week 1.\""
       },
       {
         "id": "S3",
-        "title": "Analysis — Face cam",
-        "timingSec": 15,
+        "title": "Week 2 target — Face cam",
+        "timingSec": 14,
         "direction": "",
-        "text": "\"Here's what the numbers actually mean: 9% reply rate is workable. The problem is what happens AFTER the reply — we're losing prospects between 'interested' and 'booked call.' That's the conversion hole. Week 2 focus: fix that gap. Get the 3 warm leads on calls. Make one of them pay. One client changes everything.\""
+        "text": "\"Week 2 is different. We stop chasing reply rates. We chase one thing: getting someone to pay us. Everything else — DMs, audits, content — all of it is in service of one first signed contract. The moment that happens, everything changes. Not just the number. The belief.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — week 2 starts tomorrow. The pace changes.\""
+        "text": "\"Follow — week 2 starts Monday. 23 days left.\""
       }
     ],
-    "caption": "Week 1. Real numbers:\n200+ DMs. 18 replies. 3 warm. 1 call booked. 0 DZD.\nThe outreach works. The conversion is broken.\nWeek 2: fix the hole. Get the first client. Follow.",
+    "caption": "Week 1 done. Real numbers:\r\n200+ DMs. 18 replies. 1 call booked. 0 DZD.\r\nWeek 2 target: first paid contract. That's it.\r\nFollow — 23 days left.",
+    "counterBar": "END OF WEEK 1 · 0 DZD · 200+ DMs · 18 replies · 1 call booked",
     "goalDzd": 40000000,
     "status": "posted"
   },
@@ -319,79 +335,83 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 8,
     "week": 2,
     "type": "lesson",
-    "hook": "\"A prospect said yes to a call. Here's the exact discovery call technique that had them say 'okay, how much?' without me pitching anything.\"",
-    "subtitle": "Day 8 / 30 — The listening sell",
+    "hook": "\"First discovery call. I prepared 20 minutes of material. I used none of it.\"",
+    "subtitle": "Day 8 / 30",
+    "storyBeat": "Story beat: The first real client conversation. The prepared script vs. the real call. The discovery that listening is the skill, not pitching — arrived through the embarrassment of having prepared the wrong thing.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 4,
-        "direction": "",
-        "text": "\"Day 8. First discovery call. I didn't pitch once. They asked me for the price. Here's exactly what I did.\""
+        "title": "Before the call — Face cam",
+        "timingSec": 6,
+        "direction": "Film this before the call — real pre-call energy. Slightly nervous.",
+        "text": "\"Day 8. First discovery call in 45 minutes. Private school in Algiers. I've prepared 20 minutes of material. I'm probably going to use none of it. Let's find out.\""
       },
       {
         "id": "S2",
-        "title": "Context — Voiceover B-roll",
-        "timingSec": 6,
-        "direction": "",
-        "text": "\"Private school in Algiers. Struggling with Instagram — posting but zero engagement. Classic case. I had 20 minutes.\""
+        "title": "After the call — Face cam, immediate",
+        "timingSec": 20,
+        "direction": "Film RIGHT after the call. The reaction before you've processed it fully.",
+        "text": "\"I used none of it. I opened with one question: 'What's your biggest frustration with Instagram right now?' And they talked for 7 minutes straight. I said almost nothing. I took notes. When they finished I said: 'Everything you just described — that's exactly what we fix.' Then silence. Maybe 6 seconds. And they said: 'Okay. How much?' That was not what I practiced.\"\n\n[Insight: Preparation is about knowing enough to ask the right question — not about having 20 minutes of answers ready. One question + real listening + reflecting back what you heard = the prospect closes themselves. We found this by accident when the prepared script felt wrong the moment the call started.]"
       },
       {
         "id": "S3",
-        "title": "The Technique — Face cam",
-        "timingSec": 20,
-        "direction": "",
-        "text": "\"Here's exactly what I did: I opened with one question — 'What's your biggest frustration with Instagram right now?' Then I shut up. They talked for 5 minutes. I took notes. I didn't interrupt. When they finished, I said: 'Everything you just described — that's exactly what we fix.' Silence. Then they said: 'Okay, how much?' That's the close without closing. Let them sell themselves on needing you. Your job isn't to explain what you do. Your job is to ask the question that makes them realize they have a problem you can solve.\""
+        "title": "Team reaction — Brief B-roll",
+        "timingSec": 8,
+        "direction": "Film yourself telling the team. Get their real reaction — especially Ayoub and Mohamed who haven't been on calls.",
+        "text": "\"I told the team. Ayoub asked: 'But when do you pitch?' I said: 'I didn't. They asked me.' He didn't believe me. He'll see.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
         "text": "\"Follow — tomorrow I find out if they sign.\""
       }
     ],
-    "caption": "Day 8. First discovery call.\nI didn't pitch once. They asked me for the price.\nOne question + silence = they close themselves.\nFollow to see if they sign tomorrow.",
+    "caption": "Day 8. First real call.\r\nI prepared 20 minutes of material. Used none of it.\r\nAsked one question. Listened. Reflected back.\r\nThey asked me for the price. Follow — tomorrow we find out if they sign.",
+    "counterBar": "DAY 08 / 30 · 0 DZD · 1 call done · 1 prospect asking for the price",
     "goalDzd": 40000000,
     "status": "posted"
   },
   {
     "day": 9,
     "week": 2,
-    "type": "lesson",
-    "hook": "\"After 9 days of outreach in Algeria, I know exactly which 5 business types are worth targeting — and which ones waste your time.\"",
-    "subtitle": "Day 9 / 30 — Niche selection from real experience",
+    "type": "raw",
+    "hook": "\"They didn't sign. They said they need to 'think about it.' Here's what happened after I hung up.\"",
+    "subtitle": "Day 9 / 30",
+    "storyBeat": "Story beat: The day 8 high gets answered with the oldest rejection in sales. The \"think about it\" lands heavier because the viewer watched the hope build yesterday. Show the fall without drama.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 3,
-        "direction": "",
-        "text": "\"9 days of talking to Algerian businesses. I know which ones have money, urgency, and are actually closable. Here's the list.\""
+        "title": "Hook — Face cam, immediately after",
+        "timingSec": 6,
+        "direction": "Film within 10 minutes of hanging up. The look on your face says everything.",
+        "text": "\"They said they need to think about it. 'We'll be in touch next week.' I'm filming this right now because I want you to see what that does to you on day 9 when you haven't had a single dinar yet.\""
       },
       {
         "id": "S2",
-        "title": "Context — Face cam",
-        "timingSec": 7,
+        "title": "Processing — Face cam",
+        "timingSec": 16,
         "direction": "",
-        "text": "\"I'm not guessing. I'm reporting. These 5 niches came from real conversations, real rejections, and what I've seen work in the past 9 days in the Algerian market specifically.\""
+        "text": "\"I'm not angry. I'm not even that surprised. What I feel is: I ended that call yesterday without a committed next step. I said 'I'll send the proposal' and I hung up. There was no date. No time. No 'let's talk Thursday.' I handed the decision to someone who didn't ask for it and had no reason to hurry. That's on me. I gave away the next move.\""
       },
       {
         "id": "S3",
-        "title": "The 5 Niches — Face cam",
-        "timingSec": 20,
+        "title": "What changes now — Face cam",
+        "timingSec": 12,
         "direction": "",
-        "text": "\"One — private schools. Enrollment season = urgency = budget. Two — dental clinics and doctors. Budget exists. Social media presence is almost zero. They need you more than they know. Three — gyms and fitness centers. Visual content, fast results to show. Easy to demonstrate value. Four — premium restaurants and cafés. Constant need for content. Easy retainer. Five — emerging local brands — they want to grow, they're open, they'll actually listen. These five: budget, urgency, and need. Go there first.\""
+        "text": "\"New rule starting today: no call ends without a committed next action. Not 'I'll send something.' A date and time, confirmed before hanging up. Every time. They say 'I'll think about it' — I say 'Of course — want to do 15 minutes Thursday to walk through any questions?' Get the next yes before the current call ends.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — tomorrow I show you the exact approach for each one.\""
+        "text": "\"Follow. Still 0 dinars. Still going.\""
       }
     ],
-    "caption": "9 days. Real outreach. Real conversations.\n5 Algerian niches with budget + urgency + need:\nSchools. Clinics. Gyms. Restaurants. Local brands.\nFollow for the approach strategy for each.",
+    "caption": "Day 9. \"We'll think about it.\"\r\nI ended the call without a committed next step. That's why.\r\nNew rule: no call ends without a date and time confirmed.\r\nFollow — still 0 DZD. Still going.",
+    "counterBar": "DAY 09 / 30 · 0 DZD · 1 pending (cold) · fixing the close",
     "goalDzd": 40000000,
     "status": "posted"
   },
@@ -399,79 +419,83 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 10,
     "week": 2,
     "type": "raw",
-    "hook": "\"10 days in this house. 10 days working. 0 dinars. I need to be honest about how that feels.\"",
-    "subtitle": "Day 10 / 30 — The real emotional check-in",
+    "hook": "\"10 days. 0 dinars. And I want to be completely honest about what that actually feels like.\"",
+    "subtitle": "Day 10 / 30",
+    "storyBeat": "Story beat: The ten-day mark with no money is the first real test of the series' emotional honesty. This isn't a failure episode — it's the episode where the viewer decides whether to keep watching because they trust you. Don't perform resilience. Show the weight.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 4,
+        "title": "Hook — Face cam, honest",
+        "timingSec": 6,
         "direction": "",
-        "text": "\"10 days. 10 days of work. 0 dinars. I'm not going to pretend that doesn't hit.\""
+        "text": "\"10 days in this house. 10 days of work. Zero dinars. I'm going to tell you what that actually feels like — not what I think I'm supposed to say.\""
       },
       {
         "id": "S2",
-        "title": "The Feeling — Quiet B-roll voiceover",
-        "timingSec": 8,
-        "direction": "",
-        "text": "\"I've failed 6 times before this. A store. A brand. Partnerships. All failed. And when I sit here on day 10 with nothing to show — that familiar feeling comes back.\""
+        "title": "The honest reflection — Face cam",
+        "timingSec": 22,
+        "direction": "This should feel like talking to a friend at the end of a hard day. No performance.",
+        "text": "\"It feels like the gap between effort and result is personal. Like the market is telling you something about your worth and not just your strategy. I know that's not true. I know intellectually that day 10 with zero dinars in a 30-day challenge is not a verdict. But feeling and knowing are different things. The 6 businesses I failed before — they all ended around this stage. Around the moment the work didn't produce the result and you have to decide whether the work was wrong or whether you just need more time. That's where I am today. I'm choosing more time.\""
       },
       {
         "id": "S3",
-        "title": "What's Different — Face cam",
-        "timingSec": 15,
+        "title": "What's different — Face cam",
+        "timingSec": 10,
         "direction": "",
-        "text": "\"But here's what's different this time: I'm filming it. I'm not hiding it. And that changes something. When you commit publicly — quitting becomes harder than continuing. Every day I post, there are people watching. People who need to see that you can keep going. That accountability isn't just to myself. It's to everyone watching this. That's what gets me back to work when the feeling hits.\""
+        "text": "\"One thing is different this time: you're watching. And that changes something. I can't quit privately. Which means I can't quit.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — I'm not stopping. Day 11 tomorrow.\""
+        "text": "\"Day 11 tomorrow. Follow.\""
       }
     ],
-    "caption": "10 days. 0 dinars. 6 failed businesses before this.\nThe feeling comes back. I'm not hiding it.\nBut filming it means I can't quit.\nFollow — I'm not stopping.",
+    "caption": "Day 10. 0 dinars.\r\nThe 6 failures before this all ended around this point.\r\nI'm choosing more time.\r\nOne thing is different: you're watching. Which means I can't quit privately.\r\nFollow — day 11 tomorrow.",
+    "counterBar": "DAY 10 / 30 · 0 DZD · Previous failures: 6 · Choosing more time",
     "goalDzd": 40000000,
     "status": "not_started"
   },
   {
     "day": 11,
     "week": 2,
-    "type": "lesson",
-    "hook": "\"Mohamed built something last night that saved us 3 hours a day. Here's the exact system — and why most agencies will never do this.\"",
-    "subtitle": "Day 11 / 30 — The automation lesson",
+    "type": "raw",
+    "hook": "\"Mohamed didn't sleep. I found out why at 7am when I opened the tracking sheet.\"",
+    "subtitle": "Day 11 / 30",
+    "storyBeat": "Story beat: After day 10's emotional weight, a quiet win arrives through a teammate, not through you. Mohamed's 3am system is a story about what people do when they believe in something — not a lesson about automation.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 3,
-        "direction": "",
-        "text": "\"Day 11. Mohamed worked all night. This morning he showed me something that freed 3 hours from our daily workflow.\""
+        "title": "Morning discovery — Voiceover B-roll",
+        "timingSec": 10,
+        "direction": "Film Mohamed's screen with the completed tracking system. Then film Mohamed — who is obviously running on no sleep.",
+        "text": "\"Day 11. 7am. I opened the shared tracking sheet and everything was already filled in. Every DM from the last 4 days — tagged, sorted, follow-up dates set, reply rates calculated. Mohamed did this at 3am. Nobody asked him to.\""
       },
       {
         "id": "S2",
-        "title": "Mohamed's System — B-roll screen",
-        "timingSec": 10,
-        "direction": "Film Mohamed at his screen showing the automation. Make it visual — not just Mohamed talking to camera.",
-        "text": "\"Prospect research, DM tracking, follow-up reminders — all automated. What we were doing manually for 2 hours every day now runs on its own.\""
+        "title": "Mohamed face cam — Let him speak",
+        "timingSec": 12,
+        "direction": "Point camera at Mohamed. Ask one question: \"Why last night?\" Don't script his answer. Film whatever comes out.",
+        "text": "Mohamed: \"[his real answer — film it exactly as he says it]\""
       },
       {
         "id": "S3",
-        "title": "The Lesson — Face cam",
-        "timingSec": 16,
+        "title": "What it means — Your face cam",
+        "timingSec": 12,
         "direction": "",
-        "text": "\"Here's the lesson most small agencies miss: they're always working IN the business — doing tasks. Copying names. Tracking replies. Chasing follow-ups. Manually. Every. Day. That's not a business. That's a job you gave yourself. Automation is what separates a 3-client agency from a 20-client agency. Same hours. Same team. More leverage. Build the system FIRST — then use the time the system creates to go get more clients.\""
+        "text": "\"Yesterday I talked about what 10 days with zero dinars feels like. Today Mohamed answered that at 3am without knowing I'd said it. That's what it looks like when people actually believe in what they're doing. You don't have to manage belief. You just have to build something worth believing in.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — tomorrow we run this system at full speed.\""
+        "text": "\"Follow. The system is live. Today we use it.\""
       }
     ],
-    "caption": "Day 11. Mohamed built an automation overnight.\n3 hours of daily manual work — gone.\nLesson: working IN your business keeps you small.\nAutomate first. Then scale. Follow to see it in action.",
+    "caption": "Day 11. Mohamed built the tracking system at 3am.\r\nNobody asked him to.\r\nI asked him why. Film what he said.\r\nYou don't manage belief. You build something worth believing in. Follow.",
+    "counterBar": "DAY 11 / 30 · 0 DZD · System built overnight · Team still intact",
     "goalDzd": 40000000,
     "status": "not_started"
   },
@@ -479,79 +503,83 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 12,
     "week": 2,
     "type": "proof",
-    "hook": "\"Ayoub made a reel for a client. 24 hours later — here are the exact numbers and the 3 things he did differently.\"",
-    "subtitle": "Day 12 / 30 — First content proof",
+    "hook": "\"Ayoub posted a reel for a client this morning. By lunchtime the gym owner was calling us.\"",
+    "subtitle": "Day 12 / 30",
+    "storyBeat": "Story beat: The first proof that the service actually works. Not a pitch, not a promise — a result that happened today. The gym owner calling creates the first real moment of external validation. Let it be Ayoub's moment, not yours.",
     "scenes": [
       {
         "id": "S1",
         "title": "Hook — Face cam",
-        "timingSec": 3,
+        "timingSec": 6,
         "direction": "",
-        "text": "\"Ayoub edited a reel for a client yesterday. Here's what happened in 24 hours.\""
+        "text": "\"Day 12. Ayoub posted a reel for the gym at 9am. By 1pm, the gym owner called us. Not to ask a question. To tell us people were messaging them asking for membership prices because of the reel.\""
       },
       {
         "id": "S2",
-        "title": "The Reel + Stats — Screen B-roll",
-        "timingSec": 10,
-        "direction": "Show the reel playing + Instagram insights side by side.",
-        "text": "\"Before: their average reel — 200 to 300 views. This one: [X] views in 24 hours. Same account. Same product. Different approach.\""
+        "title": "The numbers — Screen B-roll",
+        "timingSec": 12,
+        "direction": "Show the reel stats alongside the account's previous average. Make the comparison visual and obvious.",
+        "text": "\"Their account average before us: 200 to 300 views per reel. This one: [X] views in 4 hours. 11 comments asking about membership. 3 DMs. The gym owner sent a voice note — I'll let you hear it.\""
       },
       {
         "id": "S3",
-        "title": "The 3 Changes — Face cam",
-        "timingSec": 15,
-        "direction": "",
-        "text": "\"What Ayoub changed: one — strong hook in the first 2 seconds. Not a greeting. A statement that stops the scroll. Two — zero dead time. Every second earns its place. Three — trending audio that's growing, not saturated. Not the most viral sound — the one about to explode. Those three things pushed the algorithm. This is what we're selling. This is the proof.\""
+        "title": "Ayoub's moment — Face cam",
+        "timingSec": 10,
+        "direction": "Point the camera at Ayoub. Don't direct him. He's been the one doing the content work for 12 days. Let him have this.",
+        "text": "Ayoub: \"[his real reaction — film it]\""
       },
       {
         "id": "S4",
-        "title": "CTA",
-        "timingSec": 3,
+        "title": "What this means — Your face cam",
+        "timingSec": 8,
         "direction": "",
-        "text": "\"DM me 'audit' if you want us to do this for your business.\""
+        "text": "\"12 days ago I drew 10 million on a whiteboard. Today, the whiteboard isn't the proof. The gym owner's phone ringing is the proof.\""
+      },
+      {
+        "id": "S5",
+        "title": "CTA",
+        "timingSec": 4,
+        "direction": "",
+        "text": "\"DM me 'audit' — this is what we do for businesses in Algeria.\""
       }
     ],
-    "caption": "1 reel. 24 hours. [X] views. Zero ad budget.\n3 changes: hook + no dead time + right audio.\nSame account. Same product. Different result.\nDM me \"audit\" — I'll look at yours for free.",
+    "caption": "Day 12. One reel. 4 hours.\r\n11 people asked the gym about membership prices. From Instagram.\r\nThe gym owner called us at 1pm.\r\nDM me \"audit\" — we do this for businesses in Algeria.",
+    "counterBar": "DAY 12 / 30 · First client result · Gym: [X] views · 11 membership inquiries · 0 DZD cash (yet)",
     "goalDzd": 40000000,
     "status": "not_started"
   },
   {
     "day": 13,
     "week": 2,
-    "type": "lesson",
-    "hook": "\"I've been on 4 sales calls this week. Here's what I learned about selling to Algerian clients that no SMMA course will ever teach you.\"",
-    "subtitle": "Day 13 / 30 — The local market truth",
+    "type": "raw",
+    "hook": "\"A 25-minute call. Everything went well. Then they said: 'I'll think about it.' I stayed on the line 4 extra seconds hoping they'd take it back.\"",
+    "subtitle": "Day 13 / 30",
+    "storyBeat": "Story beat: The high from day 12 meets sales reality on day 13. The \"I'll think about it\" sting is heightened because the viewer saw the hope from yesterday. Don't fix it yet — let the wound be the episode.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 3,
-        "direction": "",
-        "text": "\"4 discovery calls this week. Selling in Algeria is a completely different game than everything I learned online. Here's what's actually true.\""
+        "title": "Hook — Immediate post-call face cam",
+        "timingSec": 6,
+        "direction": "Film within 10 minutes of hanging up. Do not composure-collect first.",
+        "text": "\"Just got off a 25-minute call. Went well the whole way through. They liked the gym result. They asked good questions. Then at the end: 'Let us think about it.' I stayed on the line 4 extra seconds hoping they'd take it back. They didn't.\""
       },
       {
         "id": "S2",
-        "title": "The Setup",
-        "timingSec": 6,
+        "title": "The replay — Face cam",
+        "timingSec": 18,
         "direction": "",
-        "text": "\"Every SMMA course I've studied is built on Western markets. The psychology, the objections, the timeline — none of it maps directly to Algeria. I learned this the hard way on these 4 calls.\""
+        "text": "\"I replayed it. I know where I lost them. Last 5 minutes — I started explaining the service in too much detail. They didn't ask for more detail. They were ready to hear the price. Instead I kept adding: 'and we also do X, and we include Y, and you'll get Z.' I could feel my own doubt filling the air. And they felt it too. Over-explaining is the sound of someone who needs the sale more than they need the client. I've done this before. I'll do it again if I don't fix it.\"\n\n[Insight: The moment you over-explain, the prospect feels your doubt. They don't hear the extra features — they hear insecurity. Give the price. Then stop talking. Silence isn't a gap to fill. It's the space where the client makes a decision. Filling it takes the decision away from them and makes it about you again.]"
       },
       {
         "id": "S3",
-        "title": "The 3 Truths — Face cam",
-        "timingSec": 20,
-        "direction": "",
-        "text": "\"Truth 1: Trust comes before price. Algerian clients don't buy from strangers. They need to have seen you, heard about you, or been recommended by someone they know. The stranger with a pitch doesn't win here. Truth 2: They want local proof. Not a case study from Dubai or France. An Algerian business that got results. Show that. Truth 3: They test you slowly. Don't expect a 3-month contract on call one. Start small. Prove yourself. Then expand. This isn't a weakness in the market — it's the game. Adapt your closing to these 3 realities and everything changes.\""
-      },
-      {
-        "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — tomorrow I show you how I adapted my closing to this.\""
+        "text": "\"Follow. Next call — I give the price and shut up.\""
       }
     ],
-    "caption": "4 Algerian sales calls. 4 lessons no course will teach you.\nTrust first. Local proof second. Small win third.\nThis is the Algerian closing sequence.\nFollow for the full approach.",
+    "caption": "Day 13. 25-minute call. Good energy throughout.\r\nLast 5 minutes I over-explained and they felt my doubt.\r\n\"I'll think about it.\"\r\nI stayed on the line 4 extra seconds hoping they'd take it back.\r\nNext call: price, then silence. Follow.",
+    "counterBar": "DAY 13 / 30 · 0 DZD · 1 warm (pending) · Fixing the close",
     "goalDzd": 40000000,
     "status": "not_started"
   },
@@ -559,39 +587,41 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 14,
     "week": 2,
     "type": "proof",
-    "hook": "\"Week 2 done. The counter finally moved. Here's the honest breakdown.\"",
-    "subtitle": "Day 14 / 30 — Second weekly recap",
+    "hook": "\"Week 2 done. The counter finally moved. And what I felt when it did surprised me.\"",
+    "subtitle": "Day 14 / 30",
+    "storyBeat": "Story beat: First revenue. The week 2 recap is defined by one thing: the counter moved. The emotional response to first money — from someone who's been at zero for 13 days — should be the scene the viewer remembers most clearly. Let it be real.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 3,
-        "direction": "",
-        "text": "\"Week 2 done. And this time — the number isn't zero.\""
+        "title": "The moment — Reaction B-roll",
+        "timingSec": 10,
+        "direction": "Film the actual moment when the payment notification arrives or the contract is signed. Don't stage it — set up the camera before the call and let it happen.",
+        "text": "\"[Capture this real. Whatever happens — film it.]\""
       },
       {
         "id": "S2",
-        "title": "The Numbers",
-        "timingSec": 10,
+        "title": "Right after — Face cam",
+        "timingSec": 16,
         "direction": "",
-        "text": "\"14 days. 400+ DMs total. 6 calls. 2 proposals sent. [amount] DZD received or contracted. It's not 10 million. But it's proof the model works.\""
+        "text": "\"The number isn't large. Honestly, in the context of 10 million, it barely registers on the scale. But I'm going to tell you what I felt when it hit. It wasn't excitement. It was relief. The specific relief of: the idea was real. It works. Not just in a whiteboard calculation — in a bank account. That feeling has nothing to do with the amount. It has everything to do with the proof.\""
       },
       {
         "id": "S3",
-        "title": "Week 3 Plan — Face cam",
-        "timingSec": 12,
+        "title": "Week 2 real numbers — Face cam",
+        "timingSec": 14,
         "direction": "",
-        "text": "\"Week 3 focus: stop spreading wide. Go deep on the clients we have. Get results fast. Use those results as proof. Close the next 3 clients with that proof. Quality over quantity now. The machine is built. Time to use it.\""
+        "text": "\"14 days total: [X] DZD. [X] clients paying. [X] warm prospects in conversation. [X] calls done. Week 3 focus: stop spreading wide. Go deep on what's warm. Use the gym result to close more clients in the same niche. One good proof closes faster than ten generic pitches.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
         "text": "\"Follow — 16 days left. The real race starts now.\""
       }
     ],
-    "caption": "Week 2 done. Counter moved.\n[X] DZD. Not 10 million. But proof the model works.\n16 days left. Week 3: depth, not width.\nFollow — this is where it gets real.",
+    "caption": "Week 2 done. The counter moved.\r\n[X] DZD. First money.\r\nIt wasn't excitement I felt. It was relief.\r\nThe idea was real. 16 days left. Follow.",
+    "counterBar": "END OF WEEK 2 · [X] DZD · FIRST MONEY · 16 days left",
     "goalDzd": 40000000,
     "status": "not_started"
   },
@@ -599,39 +629,41 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 15,
     "week": 3,
     "type": "raw",
-    "hook": "\"Halfway through. I'm going to be completely honest: we're not on track. Here's what I actually think.\"",
-    "subtitle": "Day 15 / 30 — The honest midpoint",
+    "hook": "\"Halfway. I'm standing in front of the day-2 whiteboard. I want to be honest about what I see.\"",
+    "subtitle": "Day 15 / 30",
+    "storyBeat": "Story beat: The whiteboard callback is a visual anchor the viewer has been carrying since day 2. Returning to it at the midpoint with an honest reckoning is the single most important story beat of the series. Don't soften the gap. Let the honesty carry the weight.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 4,
-        "direction": "",
-        "text": "\"Day 15. Halfway. We're not on pace for 10 million. I'm not going to pretend otherwise.\""
+        "title": "Whiteboard — Face cam",
+        "timingSec": 8,
+        "direction": "Stand in front of the exact same whiteboard from day 2. Same angle if possible. The visual callback should be unmistakable.",
+        "text": "\"Day 15. Halfway. I'm standing in front of the same whiteboard. 10,000,000 DZD still written on it in the same marker. Today I need to be honest about where we actually are — not where I want to say we are.\""
       },
       {
         "id": "S2",
-        "title": "The Reality — Quiet B-roll",
-        "timingSec": 8,
+        "title": "The honest math — Face cam, slow",
+        "timingSec": 16,
         "direction": "",
-        "text": "\"15 days ago I announced 10 million dinars in 30 days. The numbers right now don't support that. And I think you deserve honesty more than you deserve a good story.\""
+        "text": "\"We're at [X]% of the goal. At the pace we're currently moving — day 30 ends at [projected amount]. Not 10 million. Not even close to 10 million if I'm being completely straight. And I could frame this in a hundred ways that make it sound better than it is. I'm not going to do that. You've been watching every day. You deserve the real number.\""
       },
       {
         "id": "S3",
-        "title": "What We're Actually Building — Face cam",
-        "timingSec": 18,
-        "direction": "",
-        "text": "\"Here's what I've realized: 10 million in 30 days was always the most ambitious version of this. What we're building — the clients, the systems, the proof, the audience — that's real. That doesn't disappear on day 31. The 10 million is a goal. The agency is a business. And the business is alive. I'd rather be honest about where we are and build something that lasts than inflate a number that looks good for 24 hours.\""
+        "title": "What IS real — Voiceover B-roll",
+        "timingSec": 14,
+        "direction": "Film the house — real working footage. The team as they actually are at day 15.",
+        "text": "\"But here's what IS real: we have clients. We have proof the service works. We have a team that didn't quit on day 5 even when someone wanted to. We have 15 more days. And we have one choice: play it safe with what we have, or go harder than week 1 for every single dinar remaining. We go harder.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — 15 days left. We're still going.\""
+        "text": "\"Follow. 15 days left. The decision is made.\""
       }
     ],
-    "caption": "Halfway. We're not on pace for 10M.\nI'm telling you that directly.\nBut the agency is real. The clients are real. The systems are real.\nFollow — 15 days left. We're not stopping.",
+    "caption": "Day 15. Halfway. Standing in front of the same whiteboard.\r\nWe're at [X]% of the goal. Real number. No spin.\r\n15 days left. Two choices: safe or harder.\r\nWe go harder. Follow.",
+    "counterBar": "DAY 15 / 30 · [X] DZD · [X]% of goal · Decision: go harder",
     "goalDzd": 40000000,
     "status": "not_started"
   },
@@ -639,199 +671,209 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 16,
     "week": 3,
     "type": "lesson",
-    "hook": "\"I lost a good prospect today. My fault. I found the exact moment I lost them — and the fix.\"",
-    "subtitle": "Day 16 / 30 — The closing mistake",
+    "hook": "\"The day-13 prospect said no. I asked them why. The answer changed everything about how we pitch.\"",
+    "subtitle": "Day 16 / 30",
+    "storyBeat": "Story beat: Day 13's wound gets a conclusion. The viewer has been waiting for this. The no becomes the most valuable thing that's happened so far — because asking \"why\" produces the insight that reshapes the entire pitch strategy. The rejection is the teacher.",
     "scenes": [
       {
         "id": "S1",
         "title": "Hook — Face cam",
-        "timingSec": 3,
+        "timingSec": 6,
         "direction": "",
-        "text": "\"Lost a prospect today. Good one. My fault. I replayed the call 3 times to find the exact moment I lost them.\""
+        "text": "\"Remember day 13 — the call that ended with 'I'll think about it'? They thought about it. The answer was no. And I called them back and asked one question: 'Can you tell me why?'\""
       },
       {
         "id": "S2",
-        "title": "Context — B-roll",
-        "timingSec": 7,
+        "title": "What they said — Face cam",
+        "timingSec": 14,
         "direction": "",
-        "text": "\"The call went well. They were interested. I sent the proposal. 2 days of silence. Then: 'We decided to go another direction.' I knew something was wrong in how I ended that call.\""
+        "text": "\"They said: 'We didn't feel confident you'd done this for a business like ours.' Not price. Not timing. Not budget. Trust. And specifically — relevant trust. They saw the gym result but they're not a gym. They couldn't see themselves in it. One general case study isn't proof to someone outside that industry. It's just a story about someone else.\"\n\n[Insight: Relevant proof beats impressive proof. A case study from the same industry closes in one call. A case study from a different industry asks the prospect to imagine themselves into it — and imagination is where doubt lives. After this conversation, we built one deep case study per niche and led every pitch with the one that matched the room.]"
       },
       {
         "id": "S3",
-        "title": "The Mistake + Fix — Face cam",
-        "timingSec": 18,
-        "direction": "",
-        "text": "\"Found it. I ended the call with: 'I'll send you a proposal.' No next step. No date. No committed follow-up. I left the decision completely in their hands with zero structure. The moment you say 'I'll send something' and hang up — you've handed over control. The fix: never end a sales conversation without a committed next step. Not 'I'll send something.' Say: 'I'll send the proposal tonight — can we do a quick 15-minute call Thursday to walk through it together?' Get the YES on the next step before you hang up. Always.\""
+        "title": "What changed immediately — B-roll screen",
+        "timingSec": 12,
+        "direction": "Film yourself rebuilding the pitch — actually rewriting the doc. Make the work visible.",
+        "text": "\"I rebuilt the pitch deck that afternoon. Instead of showing 3 results from 3 different industries — I went deep on one. The gym. Before. After. The reel. The comments. The phone call at 1pm. One complete story. Sent it to 2 prospects in fitness and wellness. One replied within the hour.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — applying this fix on the next call tomorrow.\""
+        "text": "\"Follow — that prospect who replied gets a call tomorrow.\""
       }
     ],
-    "caption": "Lost a prospect today. My fault.\nMistake: I ended the call with no committed next step.\nFix: always agree on what happens next before you hang up.\nLearning expensive lessons so you don't have to. Follow.",
+    "caption": "Day 16. Day-13 prospect said no.\r\nI asked why. \"We didn't feel confident you'd done this for a business like ours.\"\r\nNot price. Trust. Specifically — relevant trust.\r\nRebuilt the pitch around one niche. One replied within the hour. Follow.",
+    "counterBar": "DAY 16 / 30 · [X] DZD · Pitch rebuilt · 1 warm reply",
     "goalDzd": 40000000,
     "status": "not_started"
   },
   {
     "day": 17,
     "week": 3,
-    "type": "proof",
-    "hook": "\"7 days managing a gym's Instagram in Algiers. Real numbers — before and after.\"",
-    "subtitle": "Day 17 / 30 — First local client proof",
+    "type": "raw",
+    "hook": "\"Day 17. Ayoub and I had an argument. I'm telling you about it.\"",
+    "subtitle": "Day 17 / 30",
+    "storyBeat": "Story beat: Real tension between two specific people the viewer knows. Not a generic \"team conflict\" — this is Ayoub specifically. The viewer has watched him build content, celebrate the gym result, and now see him clash with you. Stakes are personal now.",
     "scenes": [
       {
         "id": "S1",
         "title": "Hook — Face cam",
-        "timingSec": 3,
+        "timingSec": 6,
         "direction": "",
-        "text": "\"7 days running a gym's Instagram in Algiers. Here are the before and after numbers.\""
+        "text": "\"Day 17. Ayoub and I argued this afternoon. I'm not going to cut around it.\""
       },
       {
         "id": "S2",
-        "title": "Imad's Work — B-roll + Imad face cam",
-        "timingSec": 10,
-        "direction": "Show Imad actively managing the account — creating posts, replying to comments.",
-        "text": "\"Before Imad: posting twice a week, under 500 followers, zero DMs from potential members. Here's what 7 days of managed content did.\""
+        "title": "What happened — Face cam",
+        "timingSec": 18,
+        "direction": "",
+        "text": "\"We're two weeks in, the number's not where I said it would be, and I started pushing harder on everything — including how fast content was getting made. Ayoub pushed back. He said: 'You keep changing the brief after I've already started. I spend 3 hours on something and then you say change the angle.' He was right. I've been reacting to the gap on the scoreboard by speeding up in the wrong direction — making more changes instead of better ones. We were both frustrated. Neither of us was wrong.\""
       },
       {
         "id": "S3",
-        "title": "Results + 3 Changes — Face cam",
-        "timingSec": 15,
+        "title": "How it ended — Face cam",
+        "timingSec": 12,
         "direction": "",
-        "text": "\"[X] new followers. Engagement rate up. 3 people DMing asking about membership. Directly from Instagram. Three changes Imad made: daily posting with a consistent visual theme, transformation content showing real members, and replying to every comment within the hour. That last one alone doubled the reach. The algorithm rewards response speed. Consistency + speed. That's the formula.\""
+        "text": "\"We talked for an hour. I took a rule: brief is locked before Ayoub starts. If I want to change something, it waits for the next piece. His time is not a draft. After that conversation — I felt something shift. Not just between us. In me. When you're behind, the instinct is to control more. The answer is usually: trust more.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"DM me 'audit' if you run a business in Algeria.\""
+        "text": "\"Follow. Day 18 — new brief system, new call.\""
       }
     ],
-    "caption": "7 days. 1 gym. Algiers.\n3 changes. Real results. Zero ad budget.\nConsistency + speed of reply = algorithm growth.\nDM me \"audit\" if you want the same.",
+    "caption": "Day 17. Ayoub and I argued.\r\nHe was right. I was changing briefs after he'd already started.\r\nLesson from the argument: when you're behind, the instinct is to control more.\r\nThe answer is usually — trust more. Follow.",
+    "counterBar": "DAY 17 / 30 · [X] DZD · Team tension resolved · Brief system locked",
     "goalDzd": 40000000,
     "status": "not_started"
   },
   {
     "day": 18,
     "week": 3,
-    "type": "raw",
-    "hook": "\"3am. Couldn't sleep. 6 failed businesses playing in my head. Here's what I was thinking.\"",
-    "subtitle": "Day 18 / 30 — The 3am moment",
+    "type": "lesson",
+    "hook": "\"Second client closed. And the silence that closed it lasted exactly 8 seconds.\"",
+    "subtitle": "Day 18 / 30",
+    "storyBeat": "Story beat: The payoff from day 16's rebuilt pitch and day 8's listening discovery. The viewer has watched every piece of this close being built — the case study, the question, the silence rule. This moment is the series' first major payoff scene.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 4,
-        "direction": "",
-        "text": "\"3am last night. House is quiet. 12 days left. And every business I failed before this was in my head.\""
+        "title": "Hook — Right after the call",
+        "timingSec": 6,
+        "direction": "Film immediately after hanging up. You should look like someone who just landed something significant.",
+        "text": "\"Day 18. Second client. The call that came from rebuilding the pitch on day 16. I want to tell you how the last 2 minutes went.\""
       },
       {
         "id": "S2",
-        "title": "Late Night — Dark B-roll voiceover",
-        "timingSec": 8,
-        "direction": "Film the house at night — dim light. Nobody awake. The mood should feel real, not cinematic.",
-        "text": "\"The fruit store. The clothing brand. The PC resale. Six attempts. Six endings. That 3am quiet is where all of them come back.\""
+        "title": "The 8 seconds — Face cam",
+        "timingSec": 20,
+        "direction": "",
+        "text": "\"I opened with the gym case study — deep, specific, one story. Asked: 'Does your business have this same problem?' They said yes. I said: 'Same process. Same result. Here's what it costs.' Then I gave the price. And I stopped talking. Day 13 I filled that silence. Day 18 I didn't. 8 seconds. I counted them. They said: 'Let's do it.' That silence was the close. Not the pitch. Not the case study. The 8 seconds I didn't fill.\"\n\n[Insight: The silence after you give the price is not a gap. It's where the decision lives. Fill it and you make the decision about you again. Hold it and the prospect makes the decision. This is the lesson from day 13's failure and day 18's success — same rule, opposite execution, completely different result.]"
       },
       {
         "id": "S3",
-        "title": "What Kept Me Going — Face cam",
-        "timingSec": 15,
-        "direction": "",
-        "text": "\"Then I thought about why this is different. This time I'm not hiding it. Every failure before — I hid it. This time I'm filming it. And that means someone in Algeria is watching. Someone who's tried and failed too. If one person watches this and decides to start something because they saw that I kept going — that's bigger than the 10 million. That's what got me back to sleep.\""
+        "title": "Team reaction — Real moment",
+        "timingSec": 8,
+        "direction": "Tell the team. Film the real reaction — especially Ayoub after yesterday's argument.",
+        "text": "\"[Film this moment. Whatever the team's real reaction is — that's the scene.]\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — day 19 starts now.\""
+        "text": "\"Follow. 12 days left. Counter moved again.\""
       }
     ],
-    "caption": "3am. Couldn't sleep.\n6 failed businesses in my head.\nThis time is different: I'm filming it.\nOne person watching and deciding to start — worth more than 10M. Follow.",
+    "caption": "Day 18. Client #2 signed.\r\nPrice given. 8 seconds of silence I didn't fill.\r\nThey said: \"Let's do it.\"\r\nThe close was in the silence. Follow — 12 days left.",
+    "counterBar": "DAY 18 / 30 · [X] DZD · CLIENT #2 · 12 days left",
     "goalDzd": 40000000,
     "status": "not_started"
   },
   {
     "day": 19,
     "week": 3,
-    "type": "lesson",
-    "hook": "\"Day 19 — one number changed everything. And it taught me the most important thing I've learned in this entire challenge.\"",
-    "subtitle": "Day 19 / 30 — The momentum shift lesson",
+    "type": "raw",
+    "hook": "\"3am. Couldn't sleep. 6 failures in my head. I'm filming this right now.\"",
+    "subtitle": "Day 19 / 30",
+    "storyBeat": "Story beat: The night after the second close. A win on day 18 should produce rest. Instead it produces a 3am reckoning with every past failure. This emotional truth — that winning doesn't silence old ghosts — is the most human moment in the series.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 3,
-        "direction": "",
-        "text": "\"Day 19. One number changed the energy in this house completely. And it reminded me of something everyone building something needs to hear.\""
+        "title": "3am — Face cam, dark room",
+        "timingSec": 6,
+        "direction": "Film at actual night. Dim light only. Whisper if others are sleeping. No production. Just you and the phone.",
+        "text": "\"3am. We signed a client today. And I cannot sleep. Because every time I get close to something working, this happens: the list of everything that's ended before comes back.\""
       },
       {
         "id": "S2",
-        "title": "The Moment — Reaction B-roll",
-        "timingSec": 8,
-        "direction": "Film the genuine team reaction when the number comes in — don't stage it. Real reaction.",
-        "text": "\"[The milestone] hit today. And the energy in the room shifted immediately.\""
+        "title": "The list — Face cam, quiet",
+        "timingSec": 16,
+        "direction": "",
+        "text": "\"The fruit store. The clothing brand. The PC resale. Two partnerships that I thought were built to last. A freelance operation I ran for 8 months and walked away from. Six attempts. Six times I thought I saw what you're supposed to see when it's working. And then it stopped. So at 3am tonight with two clients and 11 days left, the question I can't silence is: is this the one that's different? Or is this just the part before it falls apart again?\""
       },
       {
         "id": "S3",
-        "title": "The Lesson — Face cam",
-        "timingSec": 18,
+        "title": "The answer — Face cam",
+        "timingSec": 12,
         "direction": "",
-        "text": "\"Here's what this taught me: results don't build gradually. They build underground — then they jump. Weeks 1 and 2, nothing moves visibly. You work, you send, you create, and it looks like nothing is happening. Then one day, everything starts moving at once. This is why 90% of people quit in week 2. They don't see that momentum is compounding underground. Day 1 through 18 — I was planting. Day 19 — the plant broke through the surface. Stay long enough to see the jump.\""
+        "text": "\"I don't know. That's the honest answer. What I know is: every one of those 6 failures happened in private. I hid them. Nobody watched. This one — you're watching. And I can't hide something you're witnessing in real time. That's the only thing I know for certain is different. Maybe that's enough.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — 11 days left. The jump is happening.\""
+        "text": "\"Going back to sleep. 11 days left.\""
       }
     ],
-    "caption": "Day 19. One number changed everything.\nResults don't build gradually — they jump.\nMost people quit before the jump.\n11 days left. We're in it. Follow.",
+    "caption": "Day 19. 3am. Signed a client today. Can't sleep.\r\n6 failures. All hidden. Nobody watched them end.\r\nThis one — you're watching.\r\nMaybe that's enough to make it different. 11 days left. Follow.",
+    "counterBar": "DAY 19 / 30 · 3am · 6 past failures · 11 days left · Can't sleep",
     "goalDzd": 40000000,
     "status": "not_started"
   },
   {
     "day": 20,
     "week": 3,
-    "type": "lesson",
-    "hook": "\"20 days locked in a house with 3 people. Here are 5 leadership lessons I learned that no university teaches.\"",
-    "subtitle": "Day 20 / 30 — The leadership lesson",
+    "type": "proof",
+    "hook": "\"Imad did something today I didn't know he could do. I need to talk about what I've been getting wrong about him.\"",
+    "subtitle": "Day 20 / 30",
+    "storyBeat": "Story beat: Day 20 gives the spotlight to Imad — who has been in the background since day 1. The viewer knows his name and role but hasn't seen him carry a scene. The result he produces becomes the vehicle for a leadership confession: you underestimated him by giving him a role instead of space.",
     "scenes": [
       {
         "id": "S1",
         "title": "Hook — Face cam",
-        "timingSec": 3,
+        "timingSec": 6,
         "direction": "",
-        "text": "\"20 days managing a team where we can't escape each other. The leadership lessons hit completely different.\""
+        "text": "\"Day 20. I want to talk about Imad. Because this morning he did something that made me realize I've been managing him wrong for 20 days.\""
       },
       {
         "id": "S2",
-        "title": "Context — B-roll team working",
-        "timingSec": 7,
-        "direction": "",
-        "text": "\"When you live and work in the same space — every mistake is visible. Every mood affects everyone. Every decision has immediate consequences. You can't hide behind Slack or a meeting room.\""
+        "title": "Imad's moment — Let him lead",
+        "timingSec": 14,
+        "direction": "Point camera at Imad. Ask: \"Walk me through what you did.\" Film his explanation exactly as it comes out. Then show the screen result.",
+        "text": "Imad: \"[his own explanation — don't script this]\"\n\n\"Client account before: [X] average reach. After Imad's move: [X]. In [timeframe]. Zero ad budget.\""
       },
       {
         "id": "S3",
-        "title": "5 Lessons — Face cam",
-        "timingSec": 20,
+        "title": "The confession — Your face cam",
+        "timingSec": 14,
         "direction": "",
-        "text": "\"Lesson 1: manage your energy before you manage your team. Your mood is contagious — they feel it before you say anything. Lesson 2: clear roles prevent 80% of conflicts. Ambiguity is what creates arguments. Lesson 3: give credit loudly and publicly. People work harder when the team sees them win. Lesson 4: when someone is off — ask first, push second. Pressure makes it worse. Questions open it. Lesson 5: the leader's job isn't to have all the answers. It's to make the team believe they can find them. I didn't learn any of this in school. I learned it in this house.\""
+        "text": "\"20 days ago I introduced Imad as 'the social media guy.' That framing — assigning someone to a role instead of a mission — is what limits people. Imad wasn't executing a role today. He was solving a problem. The second you give someone a job title instead of a problem to own, you've put a ceiling on them. I put a ceiling on Imad for 19 days. Day 20 — I took it off.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — 10 days to go.\""
+        "text": "\"Follow — 10 days left. The team's running differently now.\""
       }
     ],
-    "caption": "20 days. 3 teammates. No exit.\n5 leadership lessons you can't learn anywhere else.\nThe real education happens in the field.\n10 days left. Follow.",
+    "caption": "Day 20. Imad did something I didn't know he could do.\r\nBest result of the challenge. Zero ad budget.\r\nI gave him a role. He needed a problem to own.\r\n10 days left. Follow.",
+    "counterBar": "DAY 20 / 30 · [X] DZD · Imad: best result of the challenge · 10 days left",
     "goalDzd": 40000000,
     "status": "not_started"
   },
@@ -839,39 +881,41 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 21,
     "week": 3,
     "type": "proof",
-    "hook": "\"Week 3 done. 9 days left. Real numbers. Honest assessment.\"",
-    "subtitle": "Day 21 / 30 — Third weekly recap",
+    "hook": "\"3 weeks. Here is the complete story in numbers — and what the last 9 days have to do to make this real.\"",
+    "subtitle": "Day 21 / 30",
+    "storyBeat": "Story beat: The week 3 recap is the series' broadest narrative moment. Reference every major story beat from all 3 weeks. Make the viewer feel the full weight of the journey — and the specific pressure of 9 days remaining.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 3,
-        "direction": "",
-        "text": "\"Week 3 done. 9 days left. The real numbers, no spin.\""
+        "title": "Journey montage — B-roll",
+        "timingSec": 16,
+        "direction": "Chronological clips: day 1 arrival → whiteboard → first rejection → day 5 crisis → gym reel → day 13 \"think about it\" → Mohamed 3am → day 18 close → day 19 3am → Imad's result. 1 second each. Fast. The whole story in 16 seconds.",
+        "text": "\"3 weeks.\""
       },
       {
         "id": "S2",
-        "title": "The Numbers — Screen B-roll",
-        "timingSec": 10,
+        "title": "The real scoreboard — Face cam, slow",
+        "timingSec": 16,
         "direction": "",
-        "text": "\"21 days: [X] DZD in revenue or contracts. [X] active or pending clients. [X] followers gained. We're at [X]% of the goal.\""
+        "text": "\"21 days. [X] DZD total. [X] paying clients. [X] active prospects. [X] DMs sent. [X] calls. [X] content pieces made for clients. [X] client results produced. This is the scoreboard — not just the revenue line. All of it.\""
       },
       {
         "id": "S3",
-        "title": "The Honest Take — Face cam",
-        "timingSec": 15,
+        "title": "9 days — Face cam, direct",
+        "timingSec": 12,
         "direction": "",
-        "text": "\"10 million in 9 days? Probably not the full amount. But here's what's actually true: 3 weeks ago we had zero clients, zero systems, zero proof. Now we have all three. The challenge was always bigger than the number. The goal was to prove it's possible from Algeria. We've already proven that. 9 days of push is what we have left.\""
+        "text": "\"9 days to reach 10 million from [X]? The math is brutal. What I can tell you: we go until the last hour of day 30. We close everything in the pipeline. We use Imad's discovery to grow client results so fast that new clients come to us. And whatever the number says on day 30 — it's honest.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — final 9 days. This is the sprint.\""
+        "text": "\"Follow — 9 days. The final push.\""
       }
     ],
-    "caption": "Week 3 done. [X] DZD. 9 days left.\n10M in 9 days? Probably not.\nBut we proved it's possible from Algeria. That was always the real goal.\nFollow — the sprint begins.",
+    "caption": "Week 3 done. [X] DZD. [X] clients.\r\n9 days to close the gap.\r\nWe go until the last hour of day 30.\r\nFollow — the final push starts now.",
+    "counterBar": "END OF WEEK 3 · [X] DZD · [X] clients · 9 days left",
     "goalDzd": 40000000,
     "status": "not_started"
   },
@@ -879,39 +923,41 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 22,
     "week": 4,
     "type": "raw",
-    "hook": "\"Day 22. 8 days left. I want to be honest about the weight I feel right now.\"",
-    "subtitle": "Day 22 / 30 — The leader's weight",
+    "hook": "\"8 days left. The weight of having called this challenge has never felt heavier than today.\"",
+    "subtitle": "Day 22 / 30",
+    "storyBeat": "Story beat: Week 4 opens not with action but with the weight of leadership. The viewer has watched you lead for 22 days. Now they see the cost of being the one who called it — the specific responsibility you carry for three people who said yes because you asked.",
     "scenes": [
       {
         "id": "S1",
         "title": "Hook — Face cam",
-        "timingSec": 4,
+        "timingSec": 6,
         "direction": "",
-        "text": "\"8 days left. I want to talk about something I haven't said out loud yet — the weight of calling this challenge.\""
+        "text": "\"Day 22. 8 days left. I keep thinking about the fact that I called this. And three people said yes. And now we're 8 days from the end and the number isn't what I promised on day 1.\""
       },
       {
         "id": "S2",
-        "title": "Context — House B-roll",
-        "timingSec": 8,
-        "direction": "",
-        "text": "\"Three people gave up 30 days of their life because I said 'let's do this.' That's not nothing. When the number isn't where we wanted — that's on me.\""
+        "title": "The team — Quiet observation B-roll",
+        "timingSec": 12,
+        "direction": "Film each person working — from a distance. Don't alert them you're filming. Let the viewer see what you see when you look at your team.",
+        "text": "\"Mohamed gave up a month. Ayoub gave up a month. Imad gave up a month. Because I stood in front of a whiteboard and wrote a number. And they believed me.\""
       },
       {
         "id": "S3",
-        "title": "The Leader's Mindset — Face cam",
-        "timingSec": 15,
+        "title": "The real responsibility — Face cam",
+        "timingSec": 16,
         "direction": "",
-        "text": "\"My job right now isn't to push harder. It's to make sure everyone leaves this house with something permanent. A skill that's sharper. A system they built. A client they served. Proof that they can do this. The number might not hit. But those things don't expire. That's what a leader is responsible for — not just the result. The people.\""
+        "text": "\"I think about day 5 a lot — when I said 'week 1 always lies to you.' I said it because I needed it to be true. And it turned out to be true. Day 12 Ayoub's reel worked. Day 18 we closed client 2 with an 8-second silence. Day 20 Imad broke through. Those were real. But the weight is still mine. For the next 8 days: every decision I make is in service of making sure that the three people in this house leave with something permanent. A skill sharper. A client served well. Proof they can do this. Whatever the number says.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — 8 days. We leave everything in this house.\""
+        "text": "\"Follow. 8 days. We leave everything in this house.\""
       }
     ],
-    "caption": "Day 22. 8 days left.\n3 people gave up 30 days because I called this challenge.\nMy job: make sure they leave with something permanent.\nSkill. System. Client. Proof. Follow.",
+    "caption": "Day 22. 8 days.\r\n3 people said yes because I called this. That weight is mine.\r\nFor the next 8 days: every decision is in service of what they leave with.\r\nNot just the number. The people. Follow.",
+    "counterBar": "DAY 22 / 30 · [X] DZD · 8 days left · Full send",
     "goalDzd": 40000000,
     "status": "not_started"
   },
@@ -919,79 +965,76 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 23,
     "week": 4,
     "type": "lesson",
-    "hook": "\"A client rejected us. Instead of moving on, I asked them exactly why. Their answer changed how I pitch.\"",
-    "subtitle": "Day 23 / 30 — The rejection debrief",
+    "hook": "\"Client 3 signed. And the close was built piece by piece across 12 days of this challenge. Here's the complete map.\"",
+    "subtitle": "Day 23 / 30",
+    "storyBeat": "Story beat: The third close is the most earned moment in the series — because the viewer watched every piece of it being built. Day 8 listening close. Day 13 failure. Day 16 rebuilt pitch. Day 18 silence. Now it all comes together in one story that rewards the people who've been watching every day.",
     "scenes": [
       {
         "id": "S1",
         "title": "Hook — Face cam",
-        "timingSec": 3,
+        "timingSec": 6,
         "direction": "",
-        "text": "\"Got rejected today. Instead of moving on — I asked them why. The answer was uncomfortable but worth everything.\""
+        "text": "\"Day 23. Third client. And if you've been watching since day 8 — you already know every step that built this close.\""
       },
       {
         "id": "S2",
-        "title": "Context",
-        "timingSec": 7,
-        "direction": "",
-        "text": "\"Most people when they get rejected just move to the next lead. I've learned that a rejection with a reason is more valuable than 10 warm leads. So I asked.\""
+        "title": "The complete map — Face cam with quick timeline",
+        "timingSec": 22,
+        "direction": "Show a visual timeline if possible — or just narrate it clearly. Reference the specific days the viewer watched.",
+        "text": "\"Day 11 — first DM. Started with their specific page problem, not us. Day 13 — free audit sent. 5 points about what they're losing. Day 15 — they asked if we could talk. Day 16 — I rebuilt the pitch around one niche case study after the rejection. Day 18 — discovery call. Opened with the gym story. Asked one question. Gave the price. Waited. Day 23 — contract signed. Payment received. 12 days from cold contact to client. Every step we showed you — this is what it looks like when it works.\"\n\n[Insight: Specific DM about their page → Free audit that shows the problem → Discovery call that opens with their words → One niche case study → Price + silence. This isn't a formula we found in a course. It was assembled from every mistake and lesson in this building — day by day.]"
       },
       {
         "id": "S3",
-        "title": "What They Said + The Lesson — Face cam",
-        "timingSec": 18,
-        "direction": "",
-        "text": "\"They said: 'We didn't trust that you had experience.' That hit. Because we have the skills — but we hadn't shown the proof in the right way. They needed to see work from businesses LIKE them, not generic results. That's when I realized: social proof is not just about having results. It's about having the RIGHT results for the specific person in front of you. One relevant case study beats ten generic ones. I went back and rebuilt our proof system around niches. Every pitch now leads with a case study from their exact industry.\""
-      },
-      {
-        "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — applying this on the next pitch tomorrow.\""
+        "text": "\"Comment 'process' — I'll send you the full sequence. Follow — 7 days left.\""
       }
     ],
-    "caption": "Got rejected. Asked why.\nThey said: \"We didn't trust you had experience.\"\nLesson: relevant proof beats impressive proof.\nOne industry-specific case study closes faster than a full portfolio. Follow.",
+    "caption": "Day 23. Client #3.\r\n12 days from cold DM to signed contract.\r\nEvery step was built from a mistake we made in this house.\r\nComment \"process\" — sending the full sequence. Follow — 7 days.",
+    "counterBar": "DAY 23 / 30 · [X] DZD · CLIENT #3 · 7 days left",
     "goalDzd": 40000000,
     "status": "not_started"
   },
   {
     "day": 24,
     "week": 4,
-    "type": "lesson",
-    "hook": "\"After 24 days, here's the honest truth about what actually makes content go viral in Algeria — and what people get wrong.\"",
-    "subtitle": "Day 24 / 30 — The content truth",
+    "type": "raw",
+    "hook": "\"Ayoub said something tonight I've been thinking about for 3 hours. I want to tell you what it was.\"",
+    "subtitle": "Day 24 / 30",
+    "storyBeat": "Story beat: After 3 closes, the emotional floor drops slightly. Ayoub's candid admission — the real cost of 24 days — is the episode that holds the challenge's full human weight. It makes the finale land harder.",
     "scenes": [
       {
         "id": "S1",
         "title": "Hook — Face cam",
-        "timingSec": 3,
+        "timingSec": 6,
         "direction": "",
-        "text": "\"24 days creating content for Algerian businesses. Here's what I've learned about what actually works — and what everyone thinks works but doesn't.\""
+        "text": "\"Day 24. 6 days left. Ayoub said something tonight that I can't stop thinking about. I want to tell you.\""
       },
       {
         "id": "S2",
-        "title": "The Common Mistake — Face cam",
-        "timingSec": 8,
+        "title": "What he said — Face cam",
+        "timingSec": 16,
         "direction": "",
-        "text": "\"Most Algerian businesses chase aesthetic. They want to look professional. Branded. Clean. That's not what drives engagement on Instagram in 2025.\""
+        "text": "\"He said: 'I've never worked this hard at something I didn't fully believe in at the start. And now I believe in it. But I'm also exhausted in a way I've never been before.' I didn't know what to say. Because he's right on all three counts. He didn't fully believe it at the start. He does now. And the cost of that 24-day journey from one to the other — it shows. On all of us.\""
       },
       {
         "id": "S3",
-        "title": "The Truth + Lesson — Face cam",
-        "timingSec": 18,
+        "title": "What's real — Face cam, quiet",
+        "timingSec": 12,
         "direction": "",
-        "text": "\"What drives engagement is identification. When someone watches your content and thinks 'that's exactly me' or 'that's exactly my problem' — they stop scrolling, they save, they share. The content that's worked best for our clients in the last 24 days: behind the scenes of the real work, real customer moments, honest answers to the questions people are already asking. Not polished. Not produced. Real. The brands that win in Algeria are the ones people feel they know personally. Be a person before you're a brand.\""
+        "text": "\"Nobody talks about the real cost of a challenge like this. The missed things. The things you put down for a month. The kind of tired that doesn't show on camera because you're always filming the moment right before the low or right after it. 6 days from now, four people leave this house having paid a real price for something. I want that to mean something permanent.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"DM me 'content' — I'll audit your brand for free.\""
+        "text": "\"Follow. 6 days. We finish.\""
       }
     ],
-    "caption": "24 days creating content for Algerian businesses.\nWhat works: identification, not aesthetics.\nReal, not polished. Person, not brand.\nDM me \"content\" — I'll audit yours free.",
+    "caption": "Day 24. Ayoub said: \"I've never worked this hard at something I didn't believe in at the start. I believe it now. I'm also exhausted.\"\r\nNobody films the real cost.\r\n6 days left. We finish what we started. Follow.",
+    "counterBar": "DAY 24 / 30 · [X] DZD · 6 days left · Real cost visible",
     "goalDzd": 40000000,
     "status": "not_started"
   },
@@ -999,39 +1042,41 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 25,
     "week": 4,
     "type": "proof",
-    "hook": "\"Day 25 — second client signed. Here's the exact conversation from first DM to payment.\"",
-    "subtitle": "Day 25 / 30 — The full close breakdown",
+    "hook": "\"5 days left. Here's the complete scoreboard — every number from 25 days. Not just the money.\"",
+    "subtitle": "Day 25 / 30",
+    "storyBeat": "Story beat: With 5 days left, show the full evidence board — not just revenue, but every metric that proves the business is real. The viewer has watched this be built piece by piece. Seeing it all together makes the scale of what happened visible for the first time.",
     "scenes": [
       {
         "id": "S1",
         "title": "Hook — Face cam",
-        "timingSec": 3,
+        "timingSec": 6,
         "direction": "",
-        "text": "\"Second client signed today. I'm going to show you the entire journey — first DM to payment — so you can copy it.\""
+        "text": "\"Day 25. 5 days left. I want to show you the full picture — not just the revenue number. Everything we actually built in 25 days.\""
       },
       {
         "id": "S2",
-        "title": "The Full Timeline — Screen B-roll",
-        "timingSec": 12,
-        "direction": "Show the DM conversation scrolling. Blur out identifying info if needed.",
-        "text": "\"Day 1: first DM — specific question about their page. Day 3: they replied. Day 4: short audit sent. Day 6: discovery call. Day 8: proposal. Day 9: signed. 9 days from cold DM to payment.\""
+        "title": "The full board — Screen or whiteboard",
+        "timingSec": 16,
+        "direction": "Write it or show it on screen. Read slowly enough to let the viewer process each number.",
+        "text": "\"DMs sent: [X]. Replies: [X]. Calls done: [X]. Proposals: [X]. Clients signed: [X]. Revenue: [X] DZD. Content pieces delivered: [X]. Client result [metric 1]: [X]. Client result [metric 2]: [X]. Our own account followers gained: [X]. This is what 25 days of work looks like.\""
       },
       {
         "id": "S3",
-        "title": "The Key Moves — Face cam",
-        "timingSec": 15,
+        "title": "What it proves — Face cam",
+        "timingSec": 10,
         "direction": "",
-        "text": "\"Three things that made this close happen: one — I never pushed. I asked questions and waited. Two — the free audit built enough trust to get on a call. Three — on the call, I ended with a committed next step: 'Thursday at 4pm to walk through the proposal.' They said yes. The close was already done before I sent the numbers. This is the process. Repeat it.\""
+        "text": "\"25 days ago every one of those numbers was zero. Every single one. The people who said you can't build from Algeria without capital — this board is the answer. Not a theory. Not a plan. A scoreboard from real work.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Comment 'process' — I'll send you the full sequence.\""
+        "text": "\"Follow. 5 days. Everything left.\""
       }
     ],
-    "caption": "Day 25. Second client signed.\nCold DM to payment: 9 days.\n3 moves: no push, free audit, committed next step.\nComment \"process\" — I'll send you the full sequence.",
+    "caption": "Day 25. The full picture.\r\n[X] DZD. [X] clients. [X] results delivered. [X] DMs sent.\r\n25 days ago: all zeros.\r\n5 days left. Follow.",
+    "counterBar": "DAY 25 / 30 · [X] DZD · Full scoreboard revealed · 5 days left",
     "goalDzd": 40000000,
     "status": "not_started"
   },
@@ -1039,32 +1084,41 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 26,
     "week": 4,
     "type": "lesson",
-    "hook": "\"I made 6 mistakes in the first 3 weeks of this challenge. Here they are — so you don't repeat them.\"",
-    "subtitle": "Day 26 / 30 — The mistakes breakdown",
+    "hook": "\"I watched the day-1 video today. I want to tell you what I thought watching myself from 26 days ago.\"",
+    "subtitle": "Day 26 / 30",
+    "storyBeat": "Story beat: The most original episode of the series. You watch your own day-1 video and react in real time. The gap between who you were on day 1 and who you are on day 26 IS the documentary. This is the moment where the transformation becomes visible to the viewer and to you simultaneously.",
     "scenes": [
       {
         "id": "S1",
         "title": "Hook — Face cam",
-        "timingSec": 4,
+        "timingSec": 6,
         "direction": "",
-        "text": "\"26 days in. I'm going to tell you the 6 mistakes I made in the first 3 weeks so you can skip them entirely.\""
+        "text": "\"Day 26. I watched the day-1 video today. The one where I said '10 million dinars in 30 days.' I want to tell you what I thought watching myself from 26 days ago.\""
       },
       {
         "id": "S2",
-        "title": "The Mistakes — Face cam",
-        "timingSec": 22,
-        "direction": "",
-        "text": "\"Mistake 1: DMs that started with me, not them. Cost: 2 weeks of bad reply rates. Mistake 2: ending calls without a committed next step. Cost: lost prospects. Mistake 3: targeting too broad — any business, any size. Cost: wasted outreach. Mistake 4: showing generic proof instead of niche-specific results. Cost: lost trust in pitches. Mistake 5: ignoring the team's energy on bad days. Cost: almost lost a teammate. Mistake 6: treating the content as a diary instead of as a lesson. Cost: missed authority opportunities early. Every single one of these is fixable. And every single one came from doing the actual work.\""
+        "title": "Play day 1 — Split screen or cut",
+        "timingSec": 8,
+        "direction": "Play the actual day 1 clip on screen. Show yourself watching it if possible — reaction visible on your face.",
+        "text": "\"[Day 1 clip plays — '4 people, 1 house, 30 days...']\""
       },
       {
         "id": "S3",
-        "title": "CTA",
-        "timingSec": 3,
+        "title": "The reaction — Face cam",
+        "timingSec": 20,
         "direction": "",
-        "text": "\"Save this video. You'll need it.\""
+        "text": "\"The confidence in that video — I don't regret it. I needed to be that confident to actually start. What I see now that I couldn't see then: I thought this was a sales challenge. 'Find clients, close deals, count the money.' It turned out to be a leadership challenge. A patience challenge. A self-trust challenge after 6 failures. A team challenge on day 5 when someone wanted to go home. A listening challenge on day 8 when the script didn't work. An honesty challenge on day 15 when the number was too far. None of that is what I thought I was signing up for on day 1. All of it is more valuable than the number.\""
+      },
+      {
+        "id": "S4",
+        "title": "CTA",
+        "timingSec": 4,
+        "direction": "",
+        "text": "\"Follow. 4 days left. The answer comes soon.\""
       }
     ],
-    "caption": "26 days. 6 mistakes that cost me 3 weeks.\nBad DMs. No next step. Wrong proof. Broad targeting. Ignoring team. No lessons from content.\nAll fixable. All preventable.\nSave this. Start clean.",
+    "caption": "Day 26. Watched the day 1 video.\r\nI thought this was a sales challenge.\r\nIt was a leadership, patience, honesty, team, and self-trust challenge.\r\nNone of that is what I signed up for. All of it matters more.\r\n4 days. Follow.",
+    "counterBar": "DAY 26 / 30 · Day 1 vs Day 26 · 4 days left",
     "goalDzd": 40000000,
     "status": "not_started"
   },
@@ -1072,39 +1126,41 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 27,
     "week": 4,
     "type": "raw",
-    "hook": "\"27 days in Algeria, no capital, no connections. Here's what we actually proved.\"",
-    "subtitle": "Day 27 / 30 — The proof of concept moment",
+    "hook": "\"27 days. I'm going to tell you the one thing that happened in this house that I didn't film.\"",
+    "subtitle": "Day 27 / 30",
+    "storyBeat": "Story beat: 3 days from the end, reveal something real that happened off-camera. The \"thing I didn't show you\" episode creates the deepest trust of the series — because it proves the journey was more honest than even the camera captured.",
     "scenes": [
       {
         "id": "S1",
         "title": "Hook — Face cam",
-        "timingSec": 3,
+        "timingSec": 6,
         "direction": "",
-        "text": "\"27 days. No starting capital. No connections. No office. And here's what we actually proved.\""
+        "text": "\"Day 27. I've been going back and forth for 3 days about whether to say this. I'm saying it.\""
       },
       {
         "id": "S2",
-        "title": "Recap Montage — B-roll",
-        "timingSec": 10,
-        "direction": "Fast montage: day 1 arrival, whiteboard, calls, team moments, late nights, client reactions.",
-        "text": "\"27 days of this — every step documented.\""
+        "title": "The thing off-camera — Face cam, unproduced",
+        "timingSec": 22,
+        "direction": "No cuts. No B-roll. No music. Just you talking directly, single take. This is the most intimate, unproduced moment of the entire series. Choose a real moment — a private conversation, a decision you almost made, something that cost you emotionally to carry alone for 27 days. Be specific. The specific detail is what makes it real.",
+        "text": "\"[Your real off-camera moment — film this in one take. Be specific. Whatever it is, it happened, and carrying it alone is why you're saying it now. The viewer will know if it's real or performed.]\""
       },
       {
         "id": "S3",
-        "title": "The Proof — Face cam",
-        "timingSec": 18,
+        "title": "Why now — Face cam",
+        "timingSec": 10,
         "direction": "",
-        "text": "\"What we proved: one — a digital agency can be built from Algeria with zero starting capital. Two — Algerian businesses need and want social media management — they just need someone they trust. Three — a team of young Algerians with different skills can build a real service business in under a month. Four — documenting the journey builds the audience that becomes the first clients. If you're young, Algerian, wondering if you can start something from here — this 27-day story is your answer.\""
+        "text": "\"I'm saying this because 3 days from the end I don't want to close this challenge having shown you a version of it that was cleaner than the truth. The real version includes that. And I think the real version is more useful to anyone watching than the polished one.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — 3 days to the final answer.\""
+        "text": "\"Follow. 3 days. Almost there.\""
       }
     ],
-    "caption": "27 days. From Algeria. No capital. No connections.\nWe proved it's possible.\nIf you're wondering if you can start something from here — this is your answer.\n3 days to the final result. Follow.",
+    "caption": "Day 27. The thing I didn't film.\r\n3 days from the end — not ending this with a version cleaner than the truth.\r\nThe real version includes what the camera didn't catch.\r\nFollow — 3 days.",
+    "counterBar": "DAY 27 / 30 · The thing off camera · 3 days left",
     "goalDzd": 40000000,
     "status": "not_started"
   },
@@ -1112,39 +1168,41 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 28,
     "week": 4,
     "type": "lesson",
-    "hook": "\"28 days. 5 truths about building a business that nobody tells you before you start.\"",
-    "subtitle": "Day 28 / 30 — The knowledge summary",
+    "hook": "\"2 days left. If I had to restart this tomorrow — here's exactly what I'd do differently, and why.\"",
+    "subtitle": "Day 28 / 30",
+    "storyBeat": "Story beat: The restart letter. Every single \"change\" must reference a specific day and event the viewer watched. This episode is the reward for anyone who's been watching since day 1 — they recognize every lesson because they lived every mistake alongside you.",
     "scenes": [
       {
         "id": "S1",
         "title": "Hook — Face cam",
-        "timingSec": 3,
+        "timingSec": 6,
         "direction": "",
-        "text": "\"28 days. 5 things I know now that I wish someone had told me before I started.\""
+        "text": "\"Day 28. 2 days from the end. If I walked into this house again tomorrow knowing everything — here's exactly what changes. In order.\""
       },
       {
         "id": "S2",
-        "title": "B-roll journey highlights",
-        "timingSec": 7,
-        "direction": "Quick montage of key moments.",
-        "text": "\"I came in thinking I understood business. I was wrong about almost everything that actually matters.\""
+        "title": "The restart — Face cam, referenced",
+        "timingSec": 26,
+        "direction": "",
+        "text": "\"Day 1 — same. Announce publicly. The accountability is what keeps you in when day 10 hits. Day 2 — instead of drawing the business plan, I'd build one case study for free before any DM goes out. One result. One story. One proof. Everything flows from that. Day 3 — DMs start. But different from day 1: already specific, already about them, already with a clear next step in the message. The day-4 rewrite happens on day 1. Day 5 — I'd schedule a role check-in from the start. Not wait for crisis. What I said on day 5 — 'what feels wasted' — I say that on day 2. Day 8 — the listening close I discovered by accident? I would practice it intentionally before the first call. Day 13 — the silence after the price? I'd know to hold it before the call, not learn it from a call I lost. Day 16 — the niche case study? Built on day 2. Not day 16 after a rejection taught me it was necessary.\"\n\n[Insight: Build proof before outreach. Write specific DMs from day 1. Define roles by problems, not titles. Practice the silence before the call. Build niche case studies before you need them. These aren't productivity tips — they're the lessons extracted from specific painful days in this specific house. Each one has a date attached to it.]"
       },
       {
         "id": "S3",
-        "title": "The 5 Truths — Face cam",
-        "timingSec": 22,
+        "title": "What stays the same — Face cam",
+        "timingSec": 6,
         "direction": "",
-        "text": "\"Truth 1: speed of execution beats quality of planning. Start ugly, improve fast. Truth 2: your first client is not found — it's built through trust over time. Truth 3: the real competition isn't other agencies. It's client inertia — getting them to change anything at all is the hardest part. Truth 4: public accountability is the most powerful motivator I've ever experienced. Truth 5: the goal you announce matters less than the process you document. The journey is the product. These 5 things — remember them.\""
+        "text": "\"What I would not change: the team. The public commitment. The filming. And the decision not to quit on day 5.\""
       },
       {
         "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — 2 days to the final reveal.\""
+        "text": "\"Follow. Tomorrow is the night before the end.\""
       }
     ],
-    "caption": "28 days. 5 truths nobody tells you before you start.\nSpeed beats planning. Trust beats pitching. Inertia is the enemy.\nPublic accountability beats motivation. The journey is the product.\n2 days to the final result. Follow.",
+    "caption": "Day 28. The restart.\r\nEvery change has a day attached. Every lesson has a mistake behind it.\r\nThis is the short version of 28 days in 60 seconds.\r\n2 days left. Follow.",
+    "counterBar": "DAY 28 / 30 · The full restart · 2 days left",
     "goalDzd": 40000000,
     "status": "not_started"
   },
@@ -1152,39 +1210,34 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 29,
     "week": 4,
     "type": "raw",
-    "hook": "\"Tomorrow is day 30. I want to talk to you before the final answer.\"",
-    "subtitle": "Day 29 / 30 — The night before",
+    "hook": "\"Day 29. The last night. I'm not doing a lesson. I just want to talk.\"",
+    "subtitle": "Day 29 / 30",
+    "storyBeat": "Story beat: The penultimate episode has no tactic, no number, no lesson. It is purely human. The viewer has followed 29 days of this story. Tonight they need to feel the weight of the ending approaching — not be taught anything. The video that sets up the finale must be the most personal thing you've filmed.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 4,
-        "direction": "",
-        "text": "\"Tomorrow is day 30. The final day. I want to say something before the answer comes.\""
+        "title": "The house at night — Slow B-roll",
+        "timingSec": 14,
+        "direction": "Film every part of the house that has memory attached to it. The whiteboard. The spot from day 5. The 3am corner. Do this slowly. No rush. Let the viewer recognize these places they've been watching for 29 days.",
+        "text": "\"Day 29. Last night in this house. I walked through every room tonight. Each one has a specific moment attached to it now.\""
       },
       {
         "id": "S2",
-        "title": "The Night Before — Quiet, personal",
-        "timingSec": 12,
-        "direction": "Calm. Most personal energy of the whole series. No performance.",
-        "text": "\"29 days ago I walked into this house with 3 friends and a challenge. We've had great days and terrible ones. Clients and rejections. Total confidence and real doubt. 3am moments where I didn't know if we'd make it. All of it was real. None of it was performed.\""
+        "title": "To the viewer — Face cam, direct",
+        "timingSec": 20,
+        "direction": "Sit. Quiet. No background. This is a direct, unfiltered conversation with the people who've been watching. No performance. No motivational close. Just honest.",
+        "text": "\"If you've been watching since day 1 — you watched me not quit on day 5 when someone wanted to leave, and on day 10 when the money was still zero, and on day 13 when I over-explained and lost the call, and on day 15 when the honest midpoint math was brutal. You were there for all of it. And I want to say this directly: there were days where the only reason I posted was because people were watching. Not the business. Not the money. People who needed to see that continuing was possible. Tomorrow you get the final number. Whatever it is — it's honest. And whatever it is — this house produced it. These four people produced it. That's the part I'm proud of.\""
       },
       {
         "id": "S3",
-        "title": "What Tomorrow Means — Face cam",
-        "timingSec": 15,
-        "direction": "",
-        "text": "\"Tomorrow I'll tell you the final number. Whatever it is — I'm proud of it. Not because of the amount. Because it's honest. Because we built something real. Because we documented every day. And because somewhere in Algeria, someone watched this and decided to start something they were afraid to start. That's the result that matters most to me. Tomorrow — you'll see everything.\""
-      },
-      {
-        "id": "S4",
         "title": "CTA",
-        "timingSec": 3,
+        "timingSec": 4,
         "direction": "",
-        "text": "\"Follow — tomorrow is the final answer.\""
+        "text": "\"Tomorrow. The answer. Follow.\""
       }
     ],
-    "caption": "Day 29. The night before.\nTomorrow you'll see the final number. Real. No filter.\nWhatever it is — we built something real.\nFollow — the answer comes tomorrow.",
+    "caption": "Day 29. Last night.\r\nNo lesson tonight.\r\nIf you've been watching since day 1 — you know what this house cost.\r\nTomorrow. The answer. Follow.",
+    "counterBar": "DAY 29 / 30 · Last night · Tomorrow: the answer",
     "goalDzd": 40000000,
     "status": "not_started"
   },
@@ -1192,39 +1245,48 @@ export const SEED_DAYS: DayEntry[] = [
     "day": 30,
     "week": 4,
     "type": "proof",
-    "hook": "\"DAY 30. This is the final number — and the full honest story of how we got here.\"",
-    "subtitle": "Day 30 / 30 — The finale",
+    "hook": "\"DAY 30. THE FINAL NUMBER. And the full story of what this house actually produced.\"",
+    "subtitle": "Day 30 / 30",
+    "storyBeat": "Story beat: The finale must deliver the number and the story simultaneously. Every key scene from the 30 days passes through this episode. The number — whatever it is — is presented with full honesty. The real close is not the revenue: it's the proof that this was possible, and the launch of The Content Market. The documentary ends. The business begins.",
     "scenes": [
       {
         "id": "S1",
-        "title": "Hook — Face cam",
-        "timingSec": 4,
-        "direction": "",
-        "text": "\"Day 30. This is it. Here is the final number — and the real story of how we got here.\""
+        "title": "The full journey — Montage B-roll",
+        "timingSec": 20,
+        "direction": "The best 20 seconds of footage from the entire 30 days. Chronological. No narration — just the footage. The viewer who's been watching since day 1 should feel the weight of the whole journey compressed into this opening.",
+        "text": "\"[Pure footage — Day 1 arrival. Whiteboard. Day 5 near-quit. Day 12 gym call. Day 13 'think about it'. Day 18 close. Day 19 3am. Day 20 Imad. Day 26 day-1 replay. Day 29 last night. Day 30.]\""
       },
       {
         "id": "S2",
-        "title": "Journey Recap — Montage B-roll",
-        "timingSec": 15,
-        "direction": "Best moments: day 1 walk-in, whiteboard, first call, almost quit moment, first client, team reactions, late nights.",
-        "text": "\"30 days. 4 people. One house. Here's what happened.\""
+        "title": "The number — Face cam, slow",
+        "timingSec": 16,
+        "direction": "Stand in front of the whiteboard. Write the final number next to the original. Let both numbers be visible. Say the final number once. Then say what it means.",
+        "text": "\"[Final DZD amount]. That's the number. 30 days. This house. Zero starting capital. Four people. Algeria. [If hit goal: The whiteboard was right. If gap remains: Not 10 million. But I promised you honest, not perfect. Here's what I know: the number is real. The clients are real. The proof is real. And the business is real. Those things don't disappear on day 31.]\""
       },
       {
         "id": "S3",
-        "title": "The Final Number — Face cam",
-        "timingSec": 20,
+        "title": "The real answer — Face cam",
+        "timingSec": 12,
         "direction": "",
-        "text": "\"[Final amount] DZD. That's what we made or contracted in 30 days from the internet, from Algeria, from this house. [If hit: We proved it's possible. If didn't hit: We didn't hit 10 million. And I'm telling you that honestly — because that was always the point. The truth.] What we built: real clients. Real systems. Real proof. And on [launch date] — The Content Market officially opens. The challenge is over. The mission continues.\""
+        "text": "\"The question from day 1 was: can you build a real business from Algeria in 30 days? The answer isn't in the number. It's in the scoreboard I showed you on day 25. It's in the gym owner who called Ayoub at 1pm because members were DM-ing. It's in Mohamed's 3am system that nobody asked him to build. It's in Imad on day 20 when I stopped giving him a role and gave him a problem. It's in every person watching this who's wondering if it's possible from here. Yes. It is.\""
       },
       {
         "id": "S4",
-        "title": "Final CTA — Face cam",
-        "timingSec": 5,
+        "title": "The team — Group face cam, real",
+        "timingSec": 6,
+        "direction": "All four. No script. Film the real moment when it's done. Whatever happens — that's the scene.",
+        "text": "\"[Film this. No direction. The real moment is the scene.]\""
+      },
+      {
+        "id": "S5",
+        "title": "The Content Market — Face cam",
+        "timingSec": 8,
         "direction": "",
-        "text": "\"If this challenge showed you one thing — it showed you that starting is possible. From Algeria. With what you have. Right now. DM me 'content' if you want to be one of The Content Market's first clients.\""
+        "text": "\"The challenge is over. The Content Market — built in this house, over 30 days, in front of you — is open. If you want for your business what we built for our clients: DM me 'content.' The documentary ends. The work continues.\""
       }
     ],
-    "caption": "Day 30 / 30. DONE.\n[Final amount] DZD. From Algeria. From a house. From zero.\nThe challenge is over. The Content Market launches [date].\nDM me \"content\" to be one of the first clients.\n\nThank you for watching every day. This was for you.",
+    "caption": "Day 30 / 30. DONE.\r\n[Final amount] DZD. From Algeria. From one house. From zero.\r\nThe answer to day 1's question: yes, it's possible.\r\nThe Content Market is open.\r\nDM me \"content.\"\r\n\r\nIf you watched since day 1 — this was built for you too.",
+    "counterBar": "DAY 30 / 30 · FINAL: [X] DZD · THE CONTENT MARKET IS OPEN",
     "goalDzd": 40000000,
     "status": "not_started"
   }
